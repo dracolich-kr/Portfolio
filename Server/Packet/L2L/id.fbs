@@ -1,0 +1,8 @@
+namespace Protocol.L2L;
+                
+enum eID : uint
+{
+    None = 10000
+	, ReqLogin = 10001
+	, StartServer = 10002
+}

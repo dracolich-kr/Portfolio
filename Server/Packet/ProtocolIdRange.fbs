@@ -1,0 +1,15 @@
+namespace Protocol;
+
+// 해당 패킷 그룹의 경우 자동으로 인덱스를 발급
+enum GenerateRange : uint
+{
+	L2L = 10000
+	, W2L = 11000
+	, L2W = 12000
+}
+
+enum Range : uint
+{
+	S2C = 10000
+	, C2S = 20000
+}

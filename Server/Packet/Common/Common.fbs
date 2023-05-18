@@ -1,0 +1,26 @@
+namespace Common;
+ 
+struct Vector3 
+{
+	x:float;
+	y:float;
+	z:float;
+}
+
+struct V3
+{
+	v:[float:3];
+}
+ 
+struct Vector2
+{
+	x:float;
+	y:float;
+}
+
+
+struct Position
+{
+	position:Vector3;
+	lookat:float;
+}

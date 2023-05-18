@@ -1,0 +1,7 @@
+namespace Protocol.C2S;
+
+enum eID : uint
+{
+	None = 20000
+	, AckLogin = 20001
+}

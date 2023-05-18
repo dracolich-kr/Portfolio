@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="build.cmd" />
+    <None Include="Common\Common.fbs">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="S2C\id.fbs">
+      <Filter>S2C</Filter>
+    </None>
+    <None Include="S2C\body.fbs">
+      <Filter>S2C</Filter>
+    </None>
+    <None Include="ProtocolIdRange.fbs" />
+    <None Include="C2S\body.fbs">
+      <Filter>C2S</Filter>
+    </None>
+    <None Include="C2S\id.fbs">
+      <Filter>C2S</Filter>
+    </None>
+    <None Include="L2L\body.fbs">
+      <Filter>L2L</Filter>
+    </None>
+    <None Include="W2L\body.fbs">
+      <Filter>W2L</Filter>
+    </None>
+    <None Include="L2W\body.fbs">
+      <Filter>L2W</Filter>
+    </None>
+    <None Include="L2L\id.fbs">
+      <Filter>L2L</Filter>
+    </None>
+    <None Include="W2L\id.fbs">
+      <Filter>W2L</Filter>
+    </None>
+    <None Include="L2W\id.fbs">
+      <Filter>L2W</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{f689dc7b-8071-44c8-b439-c6c99c794d57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="S2C">
+      <UniqueIdentifier>{e6cb4285-d593-4067-8b12-79dae20270c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C2S">
+      <UniqueIdentifier>{d5c47349-0120-4d9e-a552-2a7fdfd25f65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="L2L">
+      <UniqueIdentifier>{27bda8dc-ceaa-4a69-8fbd-a4e440da268e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="L2W">
+      <UniqueIdentifier>{88fcd88d-b7e5-490f-a33d-b16a0a4ce531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="W2L">
+      <UniqueIdentifier>{0aeeb508-19a3-4c98-a04f-e915efa2fa79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

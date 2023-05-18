@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Account]
+(
+	[Id] INT NOT NULL PRIMARY KEY,
+	[Name] VARCHAR(256) NOT NULL, 
+    [LoginAt] DATETIME NOT NULL 
+)

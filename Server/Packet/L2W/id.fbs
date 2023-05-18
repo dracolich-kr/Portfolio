@@ -1,0 +1,7 @@
+namespace Protocol.L2W;
+                
+enum eID : uint
+{
+    None = 12000
+
+}

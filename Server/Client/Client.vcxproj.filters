@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Pch.h" />
+    <ClInclude Include="..\Framework\Core\Singleton.h">
+      <Filter>Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Core\ToConvert.h">
+      <Filter>Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Core\Random.h">
+      <Filter>Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Time\DateTime.h">
+      <Filter>Framework\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Time\TickTimer.h">
+      <Filter>Framework\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Packet\Packet.h">
+      <Filter>Network\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Socket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\SocketError.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\UserSocket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\ClientSocket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ErrorCode.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommonHeader.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="..\Framework\Application.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Network.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\SocketUtil.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\Allocator.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\InterfaceMemory.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\MemoryPool.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\ObjectPool.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DataStructure.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\String.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\MemoryBlockList.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Iocp\Iocp.h">
+      <Filter>Network\Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Iocp\IocpThread.h">
+      <Filter>Network\Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Iocp\IocpOverlapped.h">
+      <Filter>Network\Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\ListenSocket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Logger\Logger.h">
+      <Filter>Framework\Logger</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Pch.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="..\Framework\Time\DateTime.cpp">
+      <Filter>Framework\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Time\TickTimer.cpp">
+      <Filter>Framework\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Packet\Packet.cpp">
+      <Filter>Network\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\UserSocket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\ClientSocket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Socket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="..\Framework\Application.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Network.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\SocketUtil.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Iocp\Iocp.cpp">
+      <Filter>Network\Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Iocp\IocpThread.cpp">
+      <Filter>Network\Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Iocp\IocpOverlapped.cpp">
+      <Filter>Network\Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\ListenSocket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Logger\Logger.cpp">
+      <Filter>Framework\Logger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{dee98b7d-d42f-40d4-acaa-87220157fccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Core">
+      <UniqueIdentifier>{f2edc863-a771-489a-875e-4bce8bf09064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Time">
+      <UniqueIdentifier>{a4e405b6-032b-4aea-9457-d5da7771d7a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{e0eba9cd-3073-407b-ac11-d123ef3f049e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Packet">
+      <UniqueIdentifier>{b9f621cd-4d6d-4672-a478-63bf5a101e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{87f0f2ac-91c9-4c9e-84a5-0259868b04da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Memory">
+      <UniqueIdentifier>{55f6a58c-017a-40b0-b174-aece7cb9cf15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Iocp">
+      <UniqueIdentifier>{cf50c949-cb80-4baf-aca6-f651de69af6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Logger">
+      <UniqueIdentifier>{f4cab26f-f119-48fa-b520-4b258af797e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
