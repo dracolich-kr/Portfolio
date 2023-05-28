@@ -42,8 +42,8 @@
 	ㅇ body.fbs : 실제 패킷들을 선언하는 파일
 		ㅁ 패킷의 경우 무조건 맨 아래로 추가하는 것이 안전합니다.
 	ㅇ id.fbs : Protocol ID 값을 가지고있는 데이터 
-		ㅁ GenrateRange 경우 body.fbs를 가지고 id.fbs를 자동생성합니다. 
-		ㅁ Range의 경우 수동으로 정의를 하여야합니다. 
+		ㅁ GenrateRange 경우 body.fbs를 가지고 id.fbs를 자동생성 합니다. 
+		ㅁ Range의 경우 수동으로 정의를 하여야 합니다. 
 
 - 패킷 구성 방식
 	sample)

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Skill">
+      <UniqueIdentifier>{2ddac227-f666-4177-b44e-3e6a523a7594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HFSM">
+      <UniqueIdentifier>{a45388fc-f132-4a8d-95ba-c8295ada9658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HFSM\Transition">
+      <UniqueIdentifier>{88af6d2e-9c64-45b8-8ee3-585d5ed13ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HFSM\State">
+      <UniqueIdentifier>{5b84166c-bd4b-4352-9d2c-61e1c4705463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HFSM\Condition">
+      <UniqueIdentifier>{4172cdd8-caba-4eff-983c-c0937acaaa67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skill\EffectLogic">
+      <UniqueIdentifier>{2f7b6700-2c0b-4f60-a5d8-8a70d4d04a88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Skill\Skill.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill\SkillManager.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill\SkillState.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill\EffectLogic\EffectLogic.cpp">
+      <Filter>Skill\EffectLogic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonHeader.h" />
+    <ClInclude Include="Pch.h" />
+    <ClInclude Include="Skill\Skill.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill\SkillManager.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill\SkillState.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="HFSM\Machine.h">
+      <Filter>HFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="HFSM\Transition\Transition.h">
+      <Filter>HFSM\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="HFSM\Transition\Transition.hpp">
+      <Filter>HFSM\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="HFSM\State\State.h">
+      <Filter>HFSM\State</Filter>
+    </ClInclude>
+    <ClInclude Include="HFSM\State\State.hpp">
+      <Filter>HFSM\State</Filter>
+    </ClInclude>
+    <ClInclude Include="HFSM\Condition\Condition.h">
+      <Filter>HFSM\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill\EffectLogic\EffectLogic.h">
+      <Filter>Skill\EffectLogic</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

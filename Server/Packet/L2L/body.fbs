@@ -10,6 +10,7 @@ table ReqLogin
 	id : eID = ReqLogin;
 	a : int;
 	b : Common.Vector3;
+	c : int;
 }
 
 table StartServer
