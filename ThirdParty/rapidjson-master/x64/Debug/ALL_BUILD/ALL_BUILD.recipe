@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\archivertest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\capitalize.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\condense.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\filterkey.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\filterkeydom.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\jsonx.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\lookaheadparser.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\messagereader.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\parsebyparts.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\pretty.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\prettyauto.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\schemavalidator.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\serialize.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\simpledom.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\simplepullreader.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\simplereader.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\simplewriter.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\sortkeys.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\bin\Debug\tutorial.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\x64\Debug\examples</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Project\rapidjson-master\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

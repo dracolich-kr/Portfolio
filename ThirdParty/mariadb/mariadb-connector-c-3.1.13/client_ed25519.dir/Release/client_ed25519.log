@@ -1,0 +1,49 @@
+﻿  Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeLists.txt
+  ed25519.c
+  win_crypt.c
+  코드를 생성하고 있습니다...
+  fe_0.c
+  fe_isnegative.c
+  fe_sub.c
+  ge_p1p1_to_p2.c
+  ge_p3_to_cached.c
+  open.c
+  fe_1.c
+  fe_isnonzero.c
+  fe_tobytes.c
+  ge_p1p1_to_p3.c
+  ge_p3_to_p2.c
+  sc_muladd.c
+  fe_add.c
+  fe_mul.c
+  ge_add.c
+  ge_p2_0.c
+  ge_precomp_0.c
+  sc_reduce.c
+  fe_cmov.c
+  fe_neg.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  ge_double_scalarmult.c
+  ge_p2_dbl.c
+  ge_scalarmult_base.c
+  sign.c
+  fe_copy.c
+  fe_pow22523.c
+  ge_frombytes.c
+  ge_p3_0.c
+  ge_sub.c
+  verify.c
+  fe_frombytes.c
+  fe_sq2.c
+  ge_madd.c
+  ge_p3_dbl.c
+  ge_tobytes.c
+  fe_invert.c
+  fe_sq.c
+  ge_msub.c
+  ge_p3_tobytes.c
+  keypair.c
+  코드를 생성하고 있습니다...
+     C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/Release/client_ed25519.lib 라이브러리 및 C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/Release/client_ed25519.exp 개체를 생성하고 있습니다.
+  client_ed25519.vcxproj -> C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\Release\client_ed25519.dll

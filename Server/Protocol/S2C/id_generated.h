@@ -11,15 +11,15 @@ namespace S2C {
 
 enum eID : uint32_t {
   eID_None = 10000,
-  eID_ReqLogin = 10001,
+  eID_AckLogin = 10001,
   eID_MIN = eID_None,
-  eID_MAX = eID_ReqLogin
+  eID_MAX = eID_AckLogin
 };
 
 inline const eID (&EnumValueseID())[2] {
   static const eID values[] = {
     eID_None,
-    eID_ReqLogin
+    eID_AckLogin
   };
   return values;
 }
@@ -27,14 +27,14 @@ inline const eID (&EnumValueseID())[2] {
 inline const char * const *EnumNameseID() {
   static const char * const names[3] = {
     "None",
-    "ReqLogin",
+    "AckLogin",
     nullptr
   };
   return names;
 }
 
 inline const char *EnumNameeID(eID e) {
-  if (flatbuffers::IsOutRange(e, eID_None, eID_ReqLogin)) return "";
+  if (flatbuffers::IsOutRange(e, eID_None, eID_AckLogin)) return "";
   const size_t index = static_cast<size_t>(e) - static_cast<size_t>(eID_None);
   return EnumNameseID()[index];
 }

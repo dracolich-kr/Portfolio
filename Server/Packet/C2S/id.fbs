@@ -3,5 +3,6 @@ namespace Protocol.C2S;
 enum eID : uint
 {
 	None = 20000
-	, AckLogin = 20001
+	, ReqLogin = 20001
+	, ReqTestMsg = 20002
 }

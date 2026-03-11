@@ -1,0 +1,66 @@
+﻿  Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/libmariadb/CMakeLists.txt
+  my_auth.c
+  old_password.c
+  pvio_socket.c
+  ma_array.c
+  ma_charset.c
+  ma_hashtbl.c
+  ma_net.c
+  mariadb_charset.c
+  ma_time.c
+  ma_default.c
+  ma_errmsg.c
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_errmsg.c(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  mariadb_lib.c
+  ma_list.c
+  ma_pvio.c
+  ma_tls.c
+  ma_alloc.c
+  ma_compress.c
+  ma_init.c
+  ma_password.c
+  ma_ll2str.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  ma_sha1.c
+  mariadb_stmt.c
+  ma_loaddata.c
+  ma_stmt_codec.c
+  ma_string.c
+  ma_dtoa.c
+  mariadb_rpl.c
+  ma_client_plugin.c
+  ma_io.c
+  schannel.c
+  ma_schannel.c
+  schannel_certs.c
+  win_iconv.c
+  win32_errmsg.c
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  gzread.c
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzread.c(319,20): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzread.c(400,35): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzread.c(472,33): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  gzwrite.c
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzwrite.c(212,27): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzwrite.c(232,24): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzwrite.c(371,36): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  infback.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  trees.c
+  uncompr.c
+  zutil.c
+  mariadb_dyncol.c
+  mariadb_async.c
+  ma_context.c
+  코드를 생성하고 있습니다...
+  mariadb_obj.vcxproj -> C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_obj.dir\Release\mariadb_obj.lib

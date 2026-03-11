@@ -34,11 +34,13 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cooker.cs" />
     <Compile Include="CookerEngine.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Sender.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

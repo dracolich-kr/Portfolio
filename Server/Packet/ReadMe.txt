@@ -9,6 +9,8 @@
 	백터: [변수타입]
 	배열
 
+	enum
+
 일반 변수 선언
 	변수명:스키마 타입;
 	ex)
@@ -26,7 +28,7 @@
 
 패킷 프로젝트 설명
 - 기본 구조체 및 테이블 객체들은 Common폴더에 선언하세요.
-	ㅇ FlatBuffer로 추출할 때 include의 경우 폴더역 참조는 무시하고 inlcude 선언하기 때문
+	ㅇ FlatBuffer로 추출할 때 include의 경우 폴더 참조는 무시하고 inlcude 선언하기 때문
 
 - 패킷쿠커는 ProtocolIdRange.fbs을 기준으로 정리됩니다.
 	ㅇ GenerateRange의 경우 자동으로 ProtocolId를 발급하는 패킷 그룹은 여기에 포함 하세요.
@@ -42,8 +44,8 @@
 	ㅇ body.fbs : 실제 패킷들을 선언하는 파일
 		ㅁ 패킷의 경우 무조건 맨 아래로 추가하는 것이 안전합니다.
 	ㅇ id.fbs : Protocol ID 값을 가지고있는 데이터 
-		ㅁ GenrateRange 경우 body.fbs를 가지고 id.fbs를 자동생성 합니다. 
-		ㅁ Range의 경우 수동으로 정의를 하여야 합니다. 
+		ㅁ GenrateRange 경우 body.fbs를 가지고 id.fbs를 자동생성합니다. 
+		ㅁ Range의 경우 수동으로 정의를 하여야합니다. 
 
 - 패킷 구성 방식
 	sample)
@@ -51,7 +53,7 @@
 	namespace Protocol.패킷그룹명;
 	// eID Enum을 가져오기 위해 필요
 	include "id.fbs";
-	// 위에 설명과 같이 아래처럼 선언을 해도 실제 Cpp 빌드 하면 #inlcude "Common_generated.h"로 처리되어 있다.
+	// 위에 설명과 같이 아래처럼 선언을 해도 Cpp 빌드 하면 #inlcude "Common_generated.h"로 처리되어 있다.
 	include "../Common/Common.fbs";
 
 	table Test

@@ -1,0 +1,3 @@
+﻿  Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/unittest/mytap/CMakeLists.txt
+  tap.c
+  cctap.vcxproj -> C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\mytap\Release\cctap.lib

@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E62E903A-2B23-3E23-B205-F1665CF0BE2A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 -BC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 --check-stamp-file C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeCCompiler.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeRCCompiler.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeSystem.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_FILE_UCONTEXT_H.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_LINUX_LIMITS_H.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\INCLUDE_SIGNAL.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckFunctions.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckIncludeFiles.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckTypes.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\ConnectorName.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\SearchLibrary.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\WindowsCache.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\install.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\install_plugins.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\misc.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\plugins.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\sign.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\version_info.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include\ma_config.h.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include\mariadb_version.h.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\connection\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\io\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 -BC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 --check-stamp-file C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeCCompiler.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeRCCompiler.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeSystem.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_FILE_UCONTEXT_H.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_LINUX_LIMITS_H.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\INCLUDE_SIGNAL.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckFunctions.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckIncludeFiles.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckTypes.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\ConnectorName.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\SearchLibrary.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\WindowsCache.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\install.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\install_plugins.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\misc.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\plugins.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\sign.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\version_info.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include\ma_config.h.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include\mariadb_version.h.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\connection\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\io\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 -BC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 --check-stamp-file C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeCCompiler.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeRCCompiler.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeSystem.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_FILE_UCONTEXT_H.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_LINUX_LIMITS_H.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\INCLUDE_SIGNAL.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckFunctions.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckIncludeFiles.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckTypes.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\ConnectorName.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\SearchLibrary.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\WindowsCache.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\install.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\install_plugins.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\misc.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\plugins.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\sign.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\version_info.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include\ma_config.h.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include\mariadb_version.h.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\connection\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\io\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 -BC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 --check-stamp-file C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeCCompiler.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeRCCompiler.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\3.23.0-rc5\CMakeSystem.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_FILE_UCONTEXT_H.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_LINUX_LIMITS_H.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\INCLUDE_SIGNAL.c;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckFunctions.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckIncludeFiles.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\CheckTypes.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\ConnectorName.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\SearchLibrary.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\WindowsCache.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\install.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\install_plugins.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\misc.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\plugins.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\sign.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\version_info.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include\ma_config.h.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include\mariadb_version.h.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\connection\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\io\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio\CMakeLists.txt;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\ZERO_CHECK.vcxproj">
+      <Project>{C3B03AB7-2070-3BB5-8570-F43C251BD763}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\async.vcxproj">
+      <Project>{824BD994-4D58-3688-8E51-F72ABD6C327F}</Project>
+      <Name>async</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\auth_gssapi_client.vcxproj">
+      <Project>{77BF288C-F861-37D7-87DE-2186897E99C2}</Project>
+      <Name>auth_gssapi_client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\basic-t.vcxproj">
+      <Project>{7CBE9761-9664-3BF9-88B5-4D873EB68B5E}</Project>
+      <Name>basic-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\bulk1.vcxproj">
+      <Project>{C92F9F73-856F-3B18-A1C9-546D5A636771}</Project>
+      <Name>bulk1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\caching_sha2_password.vcxproj">
+      <Project>{7DC7D839-0641-35E9-A732-E9ABDFEA6B0C}</Project>
+      <Name>caching_sha2_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\mytap\cctap.vcxproj">
+      <Project>{0A4D1277-1AA1-3E62-BFDE-DFE3A53F54CB}</Project>
+      <Name>cctap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\charset.vcxproj">
+      <Project>{E79A5518-FDEA-3706-AE99-9C5B27E92288}</Project>
+      <Name>charset</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\client_ed25519.vcxproj">
+      <Project>{1F1DC904-FFF5-3494-BF48-60D408870E5E}</Project>
+      <Name>client_ed25519</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\conc336.vcxproj">
+      <Project>{95FA4704-1EA7-3BB2-ABF4-C73E4CC84322}</Project>
+      <Name>conc336</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\connection.vcxproj">
+      <Project>{6AB6EE90-FD36-3A9D-9B22-0FA8BDECF252}</Project>
+      <Name>connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\cursor.vcxproj">
+      <Project>{CAA87541-C58A-3D9C-A34F-EEE0F31D56E0}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\dialog.vcxproj">
+      <Project>{99C47A35-A0BE-30B6-A5B0-070BE2866D3E}</Project>
+      <Name>dialog</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\dyncol.vcxproj">
+      <Project>{DDEB4625-7CFD-3DD9-943F-BEA4CB5A4432}</Project>
+      <Name>dyncol</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\errors.vcxproj">
+      <Project>{434D64CA-1AC3-3FD9-ADF2-57840697DF96}</Project>
+      <Name>errors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\features-10_2.vcxproj">
+      <Project>{A1CCCD71-1EC8-3B52-8BDF-F7C6EE072F2C}</Project>
+      <Name>features-10_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\fetch.vcxproj">
+      <Project>{68C230F1-86E9-3928-BC7C-D47FD09234BC}</Project>
+      <Name>fetch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\libmariadb.vcxproj">
+      <Project>{9CE8D5A3-0096-3B58-A787-FA631FC3B49B}</Project>
+      <Name>libmariadb</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\logs.vcxproj">
+      <Project>{AAFF7486-EB52-387E-B80D-02F4B5B8459F}</Project>
+      <Name>logs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\ma_getopt.vcxproj">
+      <Project>{B8256332-67A7-3E54-85F3-947F30C22978}</Project>
+      <Name>ma_getopt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_obj.vcxproj">
+      <Project>{D20B5860-2F6F-3BD8-971A-DFBF2C286462}</Project>
+      <Name>mariadb_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadbclient.vcxproj">
+      <Project>{1F50A009-AC10-3781-94A7-06132049E0F7}</Project>
+      <Name>mariadbclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\misc.vcxproj">
+      <Project>{967BDE53-BD85-3C7A-B79A-8ADC94FE89DE}</Project>
+      <Name>misc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\mysql_clear_password.vcxproj">
+      <Project>{F2BA7935-A4BC-3C6D-8204-90ECD2BAD900}</Project>
+      <Name>mysql_clear_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\performance.vcxproj">
+      <Project>{B1C3DB38-75A1-311A-B3BE-FDC350B0FE43}</Project>
+      <Name>performance</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\ps.vcxproj">
+      <Project>{53D6CBE2-C25F-3F10-9552-DA050B8F106C}</Project>
+      <Name>ps</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\ps_bugs.vcxproj">
+      <Project>{6D781A71-D567-3558-B087-12E7AE469553}</Project>
+      <Name>ps_bugs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\ps_new.vcxproj">
+      <Project>{7EC66FF3-3B72-37DE-95D2-B8323E9F1E73}</Project>
+      <Name>ps_new</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\pvio_npipe.vcxproj">
+      <Project>{B3CC30BE-E424-3BF0-990D-6D4244ACCB40}</Project>
+      <Name>pvio_npipe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\pvio_shmem.vcxproj">
+      <Project>{CA761F75-C0A3-3F93-9C7B-1C45156AB3DD}</Project>
+      <Name>pvio_shmem</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\result.vcxproj">
+      <Project>{852C46A1-4EB1-3553-A4F3-BA80D28C5BA9}</Project>
+      <Name>result</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\rpl_api.vcxproj">
+      <Project>{0CE756CE-96B3-35E8-91B7-7868AC8A366F}</Project>
+      <Name>rpl_api</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\sha256_password.vcxproj">
+      <Project>{B263051E-0206-3C3C-92CB-C6F8637B1C49}</Project>
+      <Name>sha256_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\sp.vcxproj">
+      <Project>{2F9F2B50-D38D-3B89-8B0F-438686D60DFC}</Project>
+      <Name>sp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\t_aurora.vcxproj">
+      <Project>{7F7E1408-B279-33F1-A24C-CABF478716CE}</Project>
+      <Name>t_aurora</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\t_conc173.vcxproj">
+      <Project>{5B6F434F-BBF1-321C-8B2A-796CAABBDFF8}</Project>
+      <Name>t_conc173</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\thread.vcxproj">
+      <Project>{3BF70B9C-993D-3967-89E5-D2200DC39E9E}</Project>
+      <Name>thread</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\view.vcxproj">
+      <Project>{948B8D19-AB5D-3534-9C1E-3F2A3FC57F2C}</Project>
+      <Name>view</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

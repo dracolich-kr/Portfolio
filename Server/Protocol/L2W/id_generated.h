@@ -11,27 +11,30 @@ namespace L2W {
 
 enum eID : uint32_t {
   eID_None = 12000,
+  eID_StartServer = 12001,
   eID_MIN = eID_None,
-  eID_MAX = eID_None
+  eID_MAX = eID_StartServer
 };
 
-inline const eID (&EnumValueseID())[1] {
+inline const eID (&EnumValueseID())[2] {
   static const eID values[] = {
-    eID_None
+    eID_None,
+    eID_StartServer
   };
   return values;
 }
 
 inline const char * const *EnumNameseID() {
-  static const char * const names[2] = {
+  static const char * const names[3] = {
     "None",
+    "StartServer",
     nullptr
   };
   return names;
 }
 
 inline const char *EnumNameeID(eID e) {
-  if (flatbuffers::IsOutRange(e, eID_None, eID_None)) return "";
+  if (flatbuffers::IsOutRange(e, eID_None, eID_StartServer)) return "";
   const size_t index = static_cast<size_t>(e) - static_cast<size_t>(eID_None);
   return EnumNameseID()[index];
 }

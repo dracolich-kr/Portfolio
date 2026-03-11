@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth\my_auth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth\old_password.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio\pvio_socket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_charset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_hashtbl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_net.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_charset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_errmsg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_pvio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_tls.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_password.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_ll2str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_stmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_loaddata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_stmt_codec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_dtoa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_rpl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_client_plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\secure\schannel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\secure\ma_schannel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\secure\schannel_certs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv\win_iconv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\win32_errmsg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzclose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_dyncol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_async.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\win32_errmsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0670CB95-8B91-33AF-BF8D-395941CA97B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C75C76A8-4953-3BC3-9264-BE03DD68A6ED}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

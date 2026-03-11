@@ -11,30 +11,33 @@ namespace C2S {
 
 enum eID : uint32_t {
   eID_None = 20000,
-  eID_AckLogin = 20001,
+  eID_ReqLogin = 20001,
+  eID_ReqTestMsg = 20002,
   eID_MIN = eID_None,
-  eID_MAX = eID_AckLogin
+  eID_MAX = eID_ReqTestMsg
 };
 
-inline const eID (&EnumValueseID())[2] {
+inline const eID (&EnumValueseID())[3] {
   static const eID values[] = {
     eID_None,
-    eID_AckLogin
+    eID_ReqLogin,
+    eID_ReqTestMsg
   };
   return values;
 }
 
 inline const char * const *EnumNameseID() {
-  static const char * const names[3] = {
+  static const char * const names[4] = {
     "None",
-    "AckLogin",
+    "ReqLogin",
+    "ReqTestMsg",
     nullptr
   };
   return names;
 }
 
 inline const char *EnumNameeID(eID e) {
-  if (flatbuffers::IsOutRange(e, eID_None, eID_AckLogin)) return "";
+  if (flatbuffers::IsOutRange(e, eID_None, eID_ReqTestMsg)) return "";
   const size_t index = static_cast<size_t>(e) - static_cast<size_t>(eID_None);
   return EnumNameseID()[index];
 }

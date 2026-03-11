@@ -1,0 +1,8 @@
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeFiles/hiredis.dir
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeFiles/hiredis_static.dir
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeFiles/hiredis-test.dir
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeFiles/PACKAGE.dir
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeFiles/RUN_TESTS.dir
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeFiles/INSTALL.dir
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeFiles/ALL_BUILD.dir
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeFiles/ZERO_CHECK.dir

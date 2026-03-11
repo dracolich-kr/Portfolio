@@ -1,0 +1,26 @@
+﻿  Building Custom Rule C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeLists.txt
+  test.c
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(189,16): warning C4244: 'return': 'redisFD'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(344,11): warning C4244: '=': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(350,11): warning C4244: '=': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(359,11): warning C4244: '=': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(366,11): warning C4244: '=': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(404,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(416,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(456,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(475,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(484,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(493,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(503,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(518,5): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(624,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(644,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(662,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(691,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(778,29): warning C4312: '형식 캐스트': 'unsigned int'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(794,21): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(1025,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(1031,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(1082,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\test.c(1195,1): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  hiredis-test.vcxproj -> C:\Project\MyServer\ThirdParty\redis\hiredis-master\Debug\hiredis-test.exe

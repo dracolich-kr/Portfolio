@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Project/rapidjson-master/example/CMakeLists.txt
+cl : 명령줄 warning D9002: 알 수 없는 '/std:c++11' 옵션을 무시합니다.
+  schemavalidator.cpp
+  schemavalidator.vcxproj -> C:\Project\rapidjson-master\bin\Release\schemavalidator.exe

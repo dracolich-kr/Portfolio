@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D20B5860-2F6F-3BD8-971A-DFBF2C286462}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>mariadb_obj</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mariadb_obj.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mariadb_obj.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mariadb_obj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mariadb_obj.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mariadb_obj.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mariadb_obj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mariadb_obj.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mariadb_obj.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mariadb_obj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mariadb_obj.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mariadb_obj.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mariadb_obj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAVE_COMPRESS;LIBMARIADB;THREAD;WIN32_LEAN_AND_MEAN;MARIADB_SYSTEM_TYPE="Windows";MARIADB_MACHINE_TYPE="AMD64";HAVE_DLOPEN;_CRT_SECURE_NO_WARNINGS;HAVE_SCHANNEL;HAVE_TLS;SIZEOF_CHARP=8;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;HAVE_COMPRESS;LIBMARIADB;THREAD;WIN32_LEAN_AND_MEAN;MARIADB_SYSTEM_TYPE=\"Windows\";MARIADB_MACHINE_TYPE=\"AMD64\";HAVE_DLOPEN;_CRT_SECURE_NO_WARNINGS;HAVE_SCHANNEL;HAVE_TLS;SIZEOF_CHARP=8;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_COMPRESS;LIBMARIADB;THREAD;WIN32_LEAN_AND_MEAN;MARIADB_SYSTEM_TYPE="Windows";MARIADB_MACHINE_TYPE="AMD64";HAVE_DLOPEN;_CRT_SECURE_NO_WARNINGS;HAVE_SCHANNEL;HAVE_TLS;SIZEOF_CHARP=8;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_COMPRESS;LIBMARIADB;THREAD;WIN32_LEAN_AND_MEAN;MARIADB_SYSTEM_TYPE=\"Windows\";MARIADB_MACHINE_TYPE=\"AMD64\";HAVE_DLOPEN;_CRT_SECURE_NO_WARNINGS;HAVE_SCHANNEL;HAVE_TLS;SIZEOF_CHARP=8;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_COMPRESS;LIBMARIADB;THREAD;WIN32_LEAN_AND_MEAN;MARIADB_SYSTEM_TYPE="Windows";MARIADB_MACHINE_TYPE="AMD64";HAVE_DLOPEN;_CRT_SECURE_NO_WARNINGS;HAVE_SCHANNEL;HAVE_TLS;SIZEOF_CHARP=8;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_COMPRESS;LIBMARIADB;THREAD;WIN32_LEAN_AND_MEAN;MARIADB_SYSTEM_TYPE=\"Windows\";MARIADB_MACHINE_TYPE=\"AMD64\";HAVE_DLOPEN;_CRT_SECURE_NO_WARNINGS;HAVE_SCHANNEL;HAVE_TLS;SIZEOF_CHARP=8;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_COMPRESS;LIBMARIADB;THREAD;WIN32_LEAN_AND_MEAN;MARIADB_SYSTEM_TYPE="Windows";MARIADB_MACHINE_TYPE="AMD64";HAVE_DLOPEN;_CRT_SECURE_NO_WARNINGS;HAVE_SCHANNEL;HAVE_TLS;SIZEOF_CHARP=8;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_COMPRESS;LIBMARIADB;THREAD;WIN32_LEAN_AND_MEAN;MARIADB_SYSTEM_TYPE=\"Windows\";MARIADB_MACHINE_TYPE=\"AMD64\";HAVE_DLOPEN;_CRT_SECURE_NO_WARNINGS;HAVE_SCHANNEL;HAVE_TLS;SIZEOF_CHARP=8;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/libmariadb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 -BC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 --check-stamp-file C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/libmariadb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\export.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\sign.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\symlink.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_client_plugin.c.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/libmariadb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 -BC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 --check-stamp-file C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/libmariadb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\export.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\sign.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\symlink.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_client_plugin.c.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/libmariadb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 -BC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 --check-stamp-file C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/libmariadb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\export.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\sign.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\symlink.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_client_plugin.c.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/libmariadb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 -BC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 --check-stamp-file C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/libmariadb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\export.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\sign.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\cmake\symlink.cmake;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_client_plugin.c.in;C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth\my_auth.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\auth\old_password.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\plugins\pvio\pvio_socket.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_array.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_charset.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_hashtbl.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_net.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_charset.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_time.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_default.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_errmsg.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_lib.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_list.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_pvio.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_tls.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_alloc.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_compress.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_init.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_password.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_ll2str.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_sha1.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_stmt.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_loaddata.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_stmt_codec.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_string.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_dtoa.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_rpl.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_client_plugin.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_io.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\secure\schannel.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\secure\ma_schannel.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\secure\schannel_certs.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\win-iconv\win_iconv.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\win32_errmsg.c" />
+    <ClInclude Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\win32_errmsg.h" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\adler32.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\compress.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\crc32.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\deflate.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzclose.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzlib.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzread.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\gzwrite.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\infback.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\inffast.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\inflate.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\inftrees.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\trees.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\uncompr.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\zlib\zutil.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_dyncol.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_async.c" />
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\ma_context.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\ZERO_CHECK.vcxproj">
+      <Project>{C3B03AB7-2070-3BB5-8570-F43C251BD763}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

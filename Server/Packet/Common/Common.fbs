@@ -24,3 +24,24 @@ struct Position
 	position:Vector3;
 	lookat:float;
 }
+
+struct vecPosition
+{
+	position:[Vector3:3];
+	lookat:float;
+}
+
+enum classType:int
+{
+	None = 0
+	, Knight = 1
+	, Archer = 2
+	, Wizard = 3
+	,Max
+}
+
+table Temp
+{
+	x:float;
+	y:float;
+}

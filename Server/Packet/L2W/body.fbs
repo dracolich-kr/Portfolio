@@ -4,3 +4,7 @@ include "id.fbs";
 
 namespace Protocol.L2W;
 
+table StartServer
+{
+	a : int;
+}

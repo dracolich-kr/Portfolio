@@ -1,0 +1,19 @@
+#include <Pch.h>
+
+namespace Network
+{
+	void PacketHeader::Clear()
+	{
+		mPacketSize = 0;
+	}
+
+	void Packet::Clear()
+	{
+		ZeroMemory(mBuffer, sizeof(mBuffer));
+	}
+
+	void Packet::SetPacket(const void* buffer, Size size)
+	{
+		memcpy(mBuffer + PacketHeaderSize, buffer, size);
+	}
+}

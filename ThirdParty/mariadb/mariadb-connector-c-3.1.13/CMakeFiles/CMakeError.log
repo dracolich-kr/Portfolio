@@ -1,0 +1,40 @@
+Determining if files linux/limits.h exist failed with the following output:
+Change Dir: C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_a9cdf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && .NET Framework용 Microsoft (R) Build Engine 버전 16.11.2+f32259642
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ 최적화 컴파일러 버전 19.29.30145(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  HAVE_LINUX_LIMITS_H.c
+  cl /c /I"C:\Project\vcpkg\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a9cdf.dir\Debug\\" /Fd"cmTC_a9cdf.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_LINUX_LIMITS_H.c"
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_LINUX_LIMITS_H.c(2,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'linux/limits.h': No such file or directory [C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CMakeTmp\cmTC_a9cdf.vcxproj]
+
+
+Source:
+/* */
+#include <linux/limits.h>
+
+
+int main(void){return 0;}
+
+Determining if files ucontext.h exist failed with the following output:
+Change Dir: C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_3da73.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && .NET Framework용 Microsoft (R) Build Engine 버전 16.11.2+f32259642
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ 최적화 컴파일러 버전 19.29.30145(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  HAVE_FILE_UCONTEXT_H.c
+  cl /c /I"C:\Project\vcpkg\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3da73.dir\Debug\\" /Fd"cmTC_3da73.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_FILE_UCONTEXT_H.c"
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CheckIncludeFiles\HAVE_FILE_UCONTEXT_H.c(2,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'ucontext.h': No such file or directory [C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\CMakeFiles\CMakeTmp\cmTC_3da73.vcxproj]
+
+
+Source:
+/* */
+#include <ucontext.h>
+
+
+int main(void){return 0;}
+

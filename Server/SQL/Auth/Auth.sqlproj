@@ -58,10 +58,12 @@
     <Folder Include="Properties" />
     <Folder Include="Table" />
     <Folder Include="Procedure" />
+    <Folder Include="Tvp" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Table\Account.sql" />
     <Build Include="Procedure\GetAccount.sql" />
+    <Build Include="Tvp\TempTvp.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Auth.refactorlog" />

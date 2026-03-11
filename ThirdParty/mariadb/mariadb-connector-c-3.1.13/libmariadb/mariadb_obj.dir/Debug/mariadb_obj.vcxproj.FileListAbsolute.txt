@@ -1,0 +1,1 @@
+C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\mariadb_obj.dir\Debug\mariadb_obj.lib

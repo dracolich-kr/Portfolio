@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\charset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Project\MyServer\ThirdParty\mariadb\mariadb-connector-c-3.1.13\unittest\libmariadb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C75C76A8-4953-3BC3-9264-BE03DD68A6ED}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

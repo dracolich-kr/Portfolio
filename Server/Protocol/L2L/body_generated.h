@@ -21,29 +21,19 @@ struct StartServerBuilder;
 struct ReqLogin FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
   typedef ReqLoginBuilder Builder;
   enum FlatBuffersVTableOffset FLATBUFFERS_VTABLE_UNDERLYING_TYPE {
-    VT_ID = 4,
-    VT_A = 6,
-    VT_B = 8,
-    VT_C = 10
+    VT_A = 4,
+    VT_B = 6
   };
-  Protocol::L2L::eID id() const {
-    return static_cast<Protocol::L2L::eID>(GetField<uint32_t>(VT_ID, 10001));
-  }
   int32_t a() const {
     return GetField<int32_t>(VT_A, 0);
   }
   const Common::Vector3 *b() const {
     return GetStruct<const Common::Vector3 *>(VT_B);
   }
-  int32_t c() const {
-    return GetField<int32_t>(VT_C, 0);
-  }
   bool Verify(flatbuffers::Verifier &verifier) const {
     return VerifyTableStart(verifier) &&
-           VerifyField<uint32_t>(verifier, VT_ID) &&
            VerifyField<int32_t>(verifier, VT_A) &&
            VerifyField<Common::Vector3>(verifier, VT_B) &&
-           VerifyField<int32_t>(verifier, VT_C) &&
            verifier.EndTable();
   }
 };
@@ -52,17 +42,11 @@ struct ReqLoginBuilder {
   typedef ReqLogin Table;
   flatbuffers::FlatBufferBuilder &fbb_;
   flatbuffers::uoffset_t start_;
-  void add_id(Protocol::L2L::eID id) {
-    fbb_.AddElement<uint32_t>(ReqLogin::VT_ID, static_cast<uint32_t>(id), 10001);
-  }
   void add_a(int32_t a) {
     fbb_.AddElement<int32_t>(ReqLogin::VT_A, a, 0);
   }
   void add_b(const Common::Vector3 *b) {
     fbb_.AddStruct(ReqLogin::VT_B, b);
-  }
-  void add_c(int32_t c) {
-    fbb_.AddElement<int32_t>(ReqLogin::VT_C, c, 0);
   }
   explicit ReqLoginBuilder(flatbuffers::FlatBufferBuilder &_fbb)
         : fbb_(_fbb) {
@@ -77,33 +61,24 @@ struct ReqLoginBuilder {
 
 inline flatbuffers::Offset<ReqLogin> CreateReqLogin(
     flatbuffers::FlatBufferBuilder &_fbb,
-    Protocol::L2L::eID id = Protocol::L2L::eID_ReqLogin,
     int32_t a = 0,
-    const Common::Vector3 *b = 0,
-    int32_t c = 0) {
+    const Common::Vector3 *b = 0) {
   ReqLoginBuilder builder_(_fbb);
-  builder_.add_c(c);
   builder_.add_b(b);
   builder_.add_a(a);
-  builder_.add_id(id);
   return builder_.Finish();
 }
 
 struct StartServer FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
   typedef StartServerBuilder Builder;
   enum FlatBuffersVTableOffset FLATBUFFERS_VTABLE_UNDERLYING_TYPE {
-    VT_ID = 4,
-    VT_A = 6
+    VT_A = 4
   };
-  Protocol::L2L::eID id() const {
-    return static_cast<Protocol::L2L::eID>(GetField<uint32_t>(VT_ID, 10002));
-  }
   int32_t a() const {
     return GetField<int32_t>(VT_A, 0);
   }
   bool Verify(flatbuffers::Verifier &verifier) const {
     return VerifyTableStart(verifier) &&
-           VerifyField<uint32_t>(verifier, VT_ID) &&
            VerifyField<int32_t>(verifier, VT_A) &&
            verifier.EndTable();
   }
@@ -113,9 +88,6 @@ struct StartServerBuilder {
   typedef StartServer Table;
   flatbuffers::FlatBufferBuilder &fbb_;
   flatbuffers::uoffset_t start_;
-  void add_id(Protocol::L2L::eID id) {
-    fbb_.AddElement<uint32_t>(StartServer::VT_ID, static_cast<uint32_t>(id), 10002);
-  }
   void add_a(int32_t a) {
     fbb_.AddElement<int32_t>(StartServer::VT_A, a, 0);
   }
@@ -132,11 +104,9 @@ struct StartServerBuilder {
 
 inline flatbuffers::Offset<StartServer> CreateStartServer(
     flatbuffers::FlatBufferBuilder &_fbb,
-    Protocol::L2L::eID id = Protocol::L2L::eID_StartServer,
     int32_t a = 0) {
   StartServerBuilder builder_(_fbb);
   builder_.add_a(a);
-  builder_.add_id(id);
   return builder_.Finish();
 }
 

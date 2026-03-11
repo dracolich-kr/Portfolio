@@ -1,0 +1,1155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Pch.cpp" />
+    <ClCompile Include="..\Network\Asio\Asio.cpp">
+      <Filter>Network\Asio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Socket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Bit\Bit.cpp">
+      <Filter>Framework\Redis\Bit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Cluster\Cluster.cpp">
+      <Filter>Framework\Redis\Cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Command.cpp">
+      <Filter>Framework\Redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Time\DateTime.cpp">
+      <Filter>Framework\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Executor\Executor.cpp">
+      <Filter>Framework\Redis\Executor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Hashes\Hashes.cpp">
+      <Filter>Framework\Redis\Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Parser\iniParser.cpp">
+      <Filter>Framework\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Iocp\Iocp.cpp">
+      <Filter>Network\Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Iocp\IocpThread.cpp">
+      <Filter>Network\Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Parser\JsonParser.cpp">
+      <Filter>Framework\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Lists\Lists.cpp">
+      <Filter>Framework\Redis\Lists</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Logger\Logger.cpp">
+      <Filter>Framework\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Query.cpp">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Session.cpp">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Memory\MemoryPool.cpp">
+      <Filter>Framework\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Packet\Packet.cpp">
+      <Filter>Network\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\ListenSocket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\PipeLine\PipeLine.cpp">
+      <Filter>Framework\Redis\PipeLine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Session.cpp">
+      <Filter>Framework\Redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Sets\Sets.cpp">
+      <Filter>Framework\Redis\Sets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\BSDSocket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\SortedSets\SortedSets.cpp">
+      <Filter>Framework\Redis\SortedSets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Strings\Strings.cpp">
+      <Filter>Framework\Redis\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Task\TaskThread.cpp">
+      <Filter>Framework\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Thread\Thread.cpp">
+      <Filter>Framework\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Thread\ThreadManager.cpp">
+      <Filter>Framework\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Time\TickTimer.cpp">
+      <Filter>Framework\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Time\TimeSpan.cpp">
+      <Filter>Framework\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Asio\AsioAccept.cpp">
+      <Filter>Network\Asio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Asio\AsioThread.cpp">
+      <Filter>Network\Asio</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="..\Network\ClientSocket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Application.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Network.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\SocketUtil.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Memory\Allocator.cpp">
+      <Filter>Framework\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Entity\Entity.cpp">
+      <Filter>Logic\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Memory\MemoryBlockList.cpp">
+      <Filter>Framework\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Iocp\IocpOverlapped.cpp">
+      <Filter>Network\Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Sector\Sector.cpp">
+      <Filter>Logic\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Sector\SectorManager.cpp">
+      <Filter>Logic\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Sector\Cell\Cell.cpp">
+      <Filter>Logic\Sector\Cell</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Sector\Grid\Grid.cpp">
+      <Filter>Logic\Sector\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Sector\Cell\CellManager.cpp">
+      <Filter>Logic\Sector\Cell</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Sector\Grid\GridManager.cpp">
+      <Filter>Logic\Sector\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Packet\PacketQueue.cpp">
+      <Filter>Network\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Command.cpp">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Result.cpp">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Entity\CombatObject\CombatObject.cpp">
+      <Filter>Logic\Entity\CombatObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Lua\Session.cpp">
+      <Filter>Framework\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlValue.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlUInt8.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlUInt32.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlUInt64.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlWString.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlDouble.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlFloat.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlInt8.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlInt16.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlInt32.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlInt64.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlString.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlDateTime.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlUInt16.cpp">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Collision\Point.cpp">
+      <Filter>Logic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Collision\Rectangle.cpp">
+      <Filter>Logic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Collision\Circle.cpp">
+      <Filter>Logic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Collision\Collision.cpp">
+      <Filter>Logic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Math\Common.cpp">
+      <Filter>Framework\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\DBThread.cpp">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Collision\Line.cpp">
+      <Filter>Logic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Sector\SectorScript.cpp">
+      <Filter>Logic\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Lua\Function.cpp">
+      <Filter>Framework\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Lua\Value\MetaTable.cpp">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Entity\EntityManager.cpp">
+      <Filter>Logic\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\FieldObject\FieldManager.cpp">
+      <Filter>Logic\FieldObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\FieldObject\FieldObject.cpp">
+      <Filter>Logic\FieldObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\FieldObject\FieldItem.cpp">
+      <Filter>Logic\FieldObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Skill\Skill.cpp">
+      <Filter>Logic\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Skill\SkillManager.cpp">
+      <Filter>Logic\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Skill\EffectLogic\EffectLogic.cpp">
+      <Filter>Logic\Skill\EffectLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Attribute\Attribute.cpp">
+      <Filter>Logic\Attribute</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Attribute\Stat\Stat.cpp">
+      <Filter>Logic\Attribute\Stat</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Attribute\Stat\StatGroup.cpp">
+      <Filter>Logic\Attribute\Stat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\RingBuffer.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Entity\Monster\Monster.cpp">
+      <Filter>Logic\Entity\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\FieldObject\FieldObjectKeyGenerator.cpp">
+      <Filter>Logic\FieldObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Item\Item.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Item\ItemKeyGenerator.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Manager\DropManager.cpp">
+      <Filter>Logic\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Manager\KeyGenerator.cpp">
+      <Filter>Logic\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Item\Inventory.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Item\ItemOption.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Skill\SkillState.cpp">
+      <Filter>Logic\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Entity\Monster\MonsterState\MonsterState.cpp">
+      <Filter>Logic\Entity\Monster\MonsterState</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Loader\SkillDict.cpp">
+      <Filter>Logic\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Loader\ItemDict.cpp">
+      <Filter>Logic\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Loader\LoadManager.cpp">
+      <Filter>Logic\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Session\UserSession.cpp">
+      <Filter>Logic\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Session\SessionManager.cpp">
+      <Filter>Logic\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Session\ServerSession.cpp">
+      <Filter>Logic\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Handler\HandlerRegister.cpp">
+      <Filter>Logic\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Handler\Handler.cpp">
+      <Filter>Logic\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Handler\HandlerManager.cpp">
+      <Filter>Logic\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Sector\NavMesh\NavmeshManager.cpp">
+      <Filter>Logic\Sector\NavMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\AI\BehaviorTree\BehaviorTree.cpp">
+      <Filter>Logic\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\AI\BehaviorTree\Task\Task.cpp">
+      <Filter>Logic\AI\BehaviorTree\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\AI\BehaviorTree\Service\Service.cpp">
+      <Filter>Logic\AI\BehaviorTree\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\AI\BehaviorTree\Sequence\Sequence.cpp">
+      <Filter>Logic\AI\BehaviorTree\Sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\AI\BehaviorTree\Selector\Selector.cpp">
+      <Filter>Logic\AI\BehaviorTree\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\AI\BehaviorTree\Paralle\Paralle.cpp">
+      <Filter>Logic\AI\BehaviorTree\Paralle</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\AI\BehaviorTree\Decorator\Decorator.cpp">
+      <Filter>Logic\AI\BehaviorTree\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Player\Player.cpp">
+      <Filter>Logic\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\Player\Resource\Resource.cpp">
+      <Filter>Logic\Player\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\LogicThread.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Memory\FlatBufferAllocator.cpp">
+      <Filter>Framework\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Protocol\C2S\Sender.cpp">
+      <Filter>Protocol\C2S</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Session.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\MySql\Command.cpp">
+      <Filter>Framework\DataBase\MySql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\MySql\Query.cpp">
+      <Filter>Framework\DataBase\MySql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\MySql\Session.cpp">
+      <Filter>Framework\DataBase\MySql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\MySql\SessionPool.cpp">
+      <Filter>Framework\DataBase\MySql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\NetworkBuffer.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pch.h" />
+    <ClInclude Include="..\Protocol\Common\Common_generated.h">
+      <Filter>Protocol\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\S2C\id_generated.h">
+      <Filter>Protocol\S2C</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\S2C\body_generated.h">
+      <Filter>Protocol\S2C</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\ProtocolIdRange_generated.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\L2L\body_generated.h">
+      <Filter>Protocol\L2L</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\L2L\id_generated.h">
+      <Filter>Protocol\L2L</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\C2S\body_generated.h">
+      <Filter>Protocol\C2S</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\C2S\id_generated.h">
+      <Filter>Protocol\C2S</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Asio\Asio.h">
+      <Filter>Network\Asio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Socket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Bit\Bit.h">
+      <Filter>Framework\Redis\Bit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Cluster\Cluster.h">
+      <Filter>Framework\Redis\Cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Constraint.h">
+      <Filter>Framework\Redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Command.h">
+      <Filter>Framework\Redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Time\DateTime.h">
+      <Filter>Framework\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Executor\Executor.h">
+      <Filter>Framework\Redis\Executor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Hashes\Hashes.h">
+      <Filter>Framework\Redis\Hashes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Hashes\Hashes.hpp">
+      <Filter>Framework\Redis\Hashes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Parser\iniParser.h">
+      <Filter>Framework\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Iocp\Iocp.h">
+      <Filter>Network\Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Iocp\IocpThread.h">
+      <Filter>Network\Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Parser\JsonParser.h">
+      <Filter>Framework\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\InterfaceMemory.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Lists\Lists.h">
+      <Filter>Framework\Redis\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Lists\Lists.hpp">
+      <Filter>Framework\Redis\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Logger\Logger.h">
+      <Filter>Framework\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Query.h">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Session.h">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\MemoryPool.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\ObjectPool.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Packet\Packet.h">
+      <Filter>Network\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\ListenSocket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\PipeLine\PipeLine.h">
+      <Filter>Framework\Redis\PipeLine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Sentinel\Sentinel.h">
+      <Filter>Framework\Redis\Sentinel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Core\Random.h">
+      <Filter>Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Session.h">
+      <Filter>Framework\Redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Sets\Sets.h">
+      <Filter>Framework\Redis\Sets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\BSDSocket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\SocketError.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Core\Singleton.h">
+      <Filter>Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\SortedSets\SortedSets.h">
+      <Filter>Framework\Redis\SortedSets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Strings\Strings.h">
+      <Filter>Framework\Redis\Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Strings\Strings.hpp">
+      <Filter>Framework\Redis\Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Task\TaskThread.h">
+      <Filter>Framework\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Thread\Thread.h">
+      <Filter>Framework\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Thread\ThreadManager.h">
+      <Filter>Framework\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Time\TickTimer.h">
+      <Filter>Framework\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Time\TimeSpan.h">
+      <Filter>Framework\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Core\ToConvert.h">
+      <Filter>Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Asio\AsioAccept.h">
+      <Filter>Network\Asio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Asio\AsioThread.h">
+      <Filter>Network\Asio</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="..\Framework\Memory\ObjectPool.hpp">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\ClientSocket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Application.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Network.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ErrorCode.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommonHeader.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\SocketUtil.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\Allocator.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Entity\Entity.h">
+      <Filter>Logic\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DataStructure.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\MemoryBlockList.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Task\TaskThreadPool.h">
+      <Filter>Framework\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Iocp\IocpOverlapped.h">
+      <Filter>Network\Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Sector\Sector.h">
+      <Filter>Logic\Sector</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Sector\SectorManager.h">
+      <Filter>Logic\Sector</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Sector\Cell\Cell.h">
+      <Filter>Logic\Sector\Cell</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Sector\Grid\Grid.h">
+      <Filter>Logic\Sector\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Math\Vector2.h">
+      <Filter>Framework\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Math\Vector3.h">
+      <Filter>Framework\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Math\Vector2.hpp">
+      <Filter>Framework\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Math\Vector3.hpp">
+      <Filter>Framework\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Sector\Cell\CellManager.h">
+      <Filter>Logic\Sector\Cell</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Sector\Grid\GridManager.h">
+      <Filter>Logic\Sector\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Lists\ListsPush.hpp">
+      <Filter>Framework\Redis\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Lists\ListsPushEx.hpp">
+      <Filter>Framework\Redis\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Redis\Command.hpp">
+      <Filter>Framework\Redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Packet\PacketQueue.h">
+      <Filter>Network\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Command.h">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Result.h">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Command.h">
+      <Filter>Framework\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Session.h">
+      <Filter>Framework\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Result.h">
+      <Filter>Framework\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Entity\CombatObject\CombatObject.h">
+      <Filter>Logic\Entity\CombatObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Session.h">
+      <Filter>Framework\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlValue.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlString.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlUInt8.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlUInt32.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlUInt64.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlWString.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlDouble.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlFloat.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlInt8.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlInt16.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlInt32.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlInt64.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlDateTime.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlUInt16.h">
+      <Filter>Framework\DataBase\Odbc\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Collision\Point.h">
+      <Filter>Logic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Collision\Rectangle.h">
+      <Filter>Logic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Collision\Circle.h">
+      <Filter>Logic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Collision\Collision.h">
+      <Filter>Logic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Math\Common.h">
+      <Filter>Framework\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\Odbc\DBThread.h">
+      <Filter>Framework\DataBase\Odbc</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Collision\Line.h">
+      <Filter>Logic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Sector\SectorScript.h">
+      <Filter>Logic\Sector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\Float.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\Int8.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\Int16.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\Int32.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\Int64.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\String.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\Double.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Function.h">
+      <Filter>Framework\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\BaseValue.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\Bool.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Lua\Value\MetaTable.h">
+      <Filter>Framework\Lua\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Entity\EntityManager.h">
+      <Filter>Logic\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\FieldObject\FieldManager.h">
+      <Filter>Logic\FieldObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\FieldObject\FieldObject.h">
+      <Filter>Logic\FieldObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\FieldObject\FieldItem.h">
+      <Filter>Logic\FieldObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Interface.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Position.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Skill\Skill.h">
+      <Filter>Logic\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Skill\SkillManager.h">
+      <Filter>Logic\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Skill\EffectLogic\EffectLogic.h">
+      <Filter>Logic\Skill\EffectLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Attribute\Attribute.h">
+      <Filter>Logic\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Attribute\Stat\Stat.h">
+      <Filter>Logic\Attribute\Stat</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Attribute\Stat\StatGroup.h">
+      <Filter>Logic\Attribute\Stat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\RingBuffer.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Entity\Monster\Monster.h">
+      <Filter>Logic\Entity\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\FieldObject\FieldObjectKeyGenerator.h">
+      <Filter>Logic\FieldObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Item\Item.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Item\ItemKeyGenerator.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Manager\DropManager.h">
+      <Filter>Logic\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Manager\KeyGenerator.h">
+      <Filter>Logic\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Item\Inventory.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Item\ItemOption.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Skill\SkillState.h">
+      <Filter>Logic\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Entity\Monster\MonsterState\MonsterState.h">
+      <Filter>Logic\Entity\Monster\MonsterState</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Loader\ItemElem.h">
+      <Filter>Logic\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Loader\ItemDict.h">
+      <Filter>Logic\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Loader\BaseDict.h">
+      <Filter>Logic\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Loader\BaseElem.h">
+      <Filter>Logic\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Loader\SkillDict.h">
+      <Filter>Logic\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Loader\SkillElem.h">
+      <Filter>Logic\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Loader\LoadManager.h">
+      <Filter>Logic\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Session\UserSession.h">
+      <Filter>Logic\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Session\SessionManager.h">
+      <Filter>Logic\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Session\ServerSession.h">
+      <Filter>Logic\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Handler\HandlerRegister.h">
+      <Filter>Logic\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Handler\Handler.h">
+      <Filter>Logic\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Handler\HandlerManager.h">
+      <Filter>Logic\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Sector\NavMesh\NavmeshManager.h">
+      <Filter>Logic\Sector\NavMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\HFSM\Machine.h">
+      <Filter>Logic\AI\HFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\HFSM\Transition\Transition.h">
+      <Filter>Logic\AI\HFSM\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\HFSM\Transition\Transition.hpp">
+      <Filter>Logic\AI\HFSM\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\HFSM\State\State.h">
+      <Filter>Logic\AI\HFSM\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\HFSM\State\State.hpp">
+      <Filter>Logic\AI\HFSM\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\BehaviorTree\BehaviorTree.h">
+      <Filter>Logic\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\BehaviorTree\ControlFlow.h">
+      <Filter>Logic\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\BehaviorTree\Node.h">
+      <Filter>Logic\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\BehaviorTree\Task\Task.h">
+      <Filter>Logic\AI\BehaviorTree\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\BehaviorTree\Service\Service.h">
+      <Filter>Logic\AI\BehaviorTree\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\BehaviorTree\Sequence\Sequence.h">
+      <Filter>Logic\AI\BehaviorTree\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\BehaviorTree\Selector\Selector.h">
+      <Filter>Logic\AI\BehaviorTree\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\BehaviorTree\Paralle\Paralle.h">
+      <Filter>Logic\AI\BehaviorTree\Paralle</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\BehaviorTree\Decorator\Decorator.h">
+      <Filter>Logic\AI\BehaviorTree\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Player\Player.h">
+      <Filter>Logic\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\Player\Resource\Resource.h">
+      <Filter>Logic\Player\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\LogicThread.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Memory\FlatBufferAllocator.h">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\AI\HFSM\Machine.hpp">
+      <Filter>Logic\AI\HFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\C2S\Sender.h">
+      <Filter>Protocol\C2S</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Session.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\MySql\Command.h">
+      <Filter>Framework\DataBase\MySql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\MySql\Query.h">
+      <Filter>Framework\DataBase\MySql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\MySql\Session.h">
+      <Filter>Framework\DataBase\MySql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\DataBase\MySql\SessionPool.h">
+      <Filter>Framework\DataBase\MySql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\NetworkBuffer.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{213ac069-75b7-41a1-9ad5-1bea1be7fa26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{3b5fabeb-ac0e-40d5-bd46-ed1615751bfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Time">
+      <UniqueIdentifier>{9276ce23-1b0d-4e6a-b8d8-41612bfee3dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Thread">
+      <UniqueIdentifier>{349fccf5-b702-4b63-ad52-98672aae03e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Packet">
+      <UniqueIdentifier>{aa021fc6-4709-4d06-ad4c-cc050f91be40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis">
+      <UniqueIdentifier>{1ac1fa13-3649-4ba8-9b18-6df267f621bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Core">
+      <UniqueIdentifier>{c1c1b7c2-df1a-4adb-bb79-aa19d568a7ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Asio">
+      <UniqueIdentifier>{e24f38bc-f416-4a14-9b69-d272a60a238b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{0ef41f01-cbb1-45b5-bc6d-83c110b71cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Iocp">
+      <UniqueIdentifier>{7af62eb1-465e-4b47-a3d0-b0365f06d0d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\Bit">
+      <UniqueIdentifier>{c0036825-b797-4926-a4b0-f21de8ed1a45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\Cluster">
+      <UniqueIdentifier>{950ee155-3f9e-41cd-af66-51efee20628e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Memory">
+      <UniqueIdentifier>{bd396d7d-abe1-46da-973d-7b1acfa14137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Task">
+      <UniqueIdentifier>{2fc6ba9f-39c7-4299-8c91-9f5019d0f1e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\Executor">
+      <UniqueIdentifier>{53afff20-c766-49e6-9a8b-610edf61547c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\Hashes">
+      <UniqueIdentifier>{27b6f8bd-2b4f-4279-9779-6118550192ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Parser">
+      <UniqueIdentifier>{50647648-42bf-4d51-a78e-847d63cff4d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\Lists">
+      <UniqueIdentifier>{74e79fc5-8b80-4b60-a843-a1fe81e89e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\PipeLine">
+      <UniqueIdentifier>{64f89300-14d2-412b-918a-0c62907eaf94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\Sets">
+      <UniqueIdentifier>{552eb26d-f0fa-49f0-b0c6-b65b44e3cfcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\Strings">
+      <UniqueIdentifier>{adc8409e-9bd2-4aec-8981-f566fc4f6a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\SortedSets">
+      <UniqueIdentifier>{baf32009-3f9d-4bd0-8451-391702f77cb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Redis\Sentinel">
+      <UniqueIdentifier>{42321faf-9c20-4422-ac5e-f2d6f68f0362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Logger">
+      <UniqueIdentifier>{936cbd38-5f96-4716-896e-edfb14174c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{c63eb9f7-631d-4d98-a322-27ae5fe5fc44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\Common">
+      <UniqueIdentifier>{ba2da76c-edff-4f80-936a-92482c37c0ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\S2C">
+      <UniqueIdentifier>{55afc5e5-e445-432c-bd0b-a9aaed78e029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\L2L">
+      <UniqueIdentifier>{cd7a82e0-2125-4b04-845c-85ba3db681bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\C2S">
+      <UniqueIdentifier>{90336188-0614-4d81-beb0-275f2214a97a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{6199cec1-33b0-44ab-ab44-85cd9fedfbab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Entity">
+      <UniqueIdentifier>{ca55dee3-30c0-4c82-b6ea-fee26e378d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Entity\CombatObject">
+      <UniqueIdentifier>{632576a1-db84-44e2-9a2f-ca2f49ab3c46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Math">
+      <UniqueIdentifier>{54572e4e-ccd7-4b46-b3a3-65e0654cd54c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\DataBase">
+      <UniqueIdentifier>{b46bc29f-9b06-4eff-863e-09783ced2fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\DataBase\Odbc">
+      <UniqueIdentifier>{3188ebb3-6cca-4d63-ba09-e4c3b34a05fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Lua">
+      <UniqueIdentifier>{ddf5d0a4-25ee-406b-9ab8-71966130c0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\DataBase\Odbc\Value">
+      <UniqueIdentifier>{9dade6cf-df8e-4134-a5af-854fb0eafbf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Sector">
+      <UniqueIdentifier>{8a71c5c3-0de9-4c76-8a31-8c5c0fcbe9eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Sector\Cell">
+      <UniqueIdentifier>{409fd1f8-4c4d-42a0-a997-5cbcf25a0218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Collision">
+      <UniqueIdentifier>{6d3d9c7a-f2d5-47d1-9081-ff6bbd81e3d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Handler">
+      <UniqueIdentifier>{d4f513c8-60e2-4bea-b979-0d63ae76f93d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Lua\Value">
+      <UniqueIdentifier>{3fbd1963-62d4-4ee4-8960-b28d5c147d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\FieldObject">
+      <UniqueIdentifier>{59eb0d5f-3041-4cea-bcd9-ea1a21fe9263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Sector\Grid">
+      <UniqueIdentifier>{26480f22-cb43-42c7-9375-498517d61049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Loader">
+      <UniqueIdentifier>{9b51288a-940e-4eca-b7c1-efdac37436af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Skill">
+      <UniqueIdentifier>{1f50f5fe-6e87-402d-8687-77dcf2c8d3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Skill\EffectLogic">
+      <UniqueIdentifier>{8587a0e0-ad16-473c-b2cd-22871996c93b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Attribute">
+      <UniqueIdentifier>{87474522-200f-4812-b240-ee8abf1c4392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Attribute\Stat">
+      <UniqueIdentifier>{33679657-b938-4191-bbc0-320df615a581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Entity\Monster">
+      <UniqueIdentifier>{27849e7b-3291-4840-8ddc-d7fe1362f76a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Item">
+      <UniqueIdentifier>{7174bb01-f8d7-46ee-af9f-395840b6f55e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Manager">
+      <UniqueIdentifier>{213e81e5-24d6-4cb7-9c83-c6b69eba4027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Entity\Monster\MonsterState">
+      <UniqueIdentifier>{0bf58108-b9e0-46a5-bb62-9775c7fc6ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Session">
+      <UniqueIdentifier>{0361fe69-b76d-478d-85d6-6c0d403103b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Sector\NavMesh">
+      <UniqueIdentifier>{5771296e-e0ba-4800-8679-d86c26c4f21d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI">
+      <UniqueIdentifier>{62d366b7-43aa-43b9-a42e-462ede2ac72b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\HFSM">
+      <UniqueIdentifier>{b6d3b425-c9fb-4224-91d2-2eccabdf0852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\HFSM\Transition">
+      <UniqueIdentifier>{b06ec97e-8858-48e2-a237-68a4a4ea987a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\HFSM\State">
+      <UniqueIdentifier>{d78437e4-6d98-4325-9546-1fe742d67495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\BehaviorTree">
+      <UniqueIdentifier>{f05cc67d-40a9-4a2a-b92c-b4b27344ac2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\BehaviorTree\Task">
+      <UniqueIdentifier>{4710c79d-117b-429c-aae3-148614237712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\BehaviorTree\Service">
+      <UniqueIdentifier>{a7778fb7-d5a3-49da-b4de-76bb495ce122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\BehaviorTree\Sequence">
+      <UniqueIdentifier>{0ce4be73-b8fd-426c-8c78-4f18ef6fe31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\BehaviorTree\Selector">
+      <UniqueIdentifier>{0f0c2cfc-c098-43f4-b53c-b84c8f763110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\BehaviorTree\Paralle">
+      <UniqueIdentifier>{799a1634-55e5-4956-9345-ca75c80e2a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI\BehaviorTree\Decorator">
+      <UniqueIdentifier>{1e132e2a-3f68-4c7e-80c3-61f14d2b5558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Player">
+      <UniqueIdentifier>{605586ac-0c11-409e-a771-90ab85e8e355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Player\Resource">
+      <UniqueIdentifier>{18a9da24-55e2-4782-8f4c-2d9760b7a9af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\DataBase\MySql">
+      <UniqueIdentifier>{772a59c6-4fcb-47fb-a0c8-6500bc95a19a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Logic\Sector\ReadMe.md">
+      <Filter>Logic\Sector</Filter>
+    </None>
+    <None Include="..\Framework\Lua\Readme.md">
+      <Filter>Framework\Lua</Filter>
+    </None>
+    <None Include="..\Framework\Redis\Readme.md">
+      <Filter>Framework\Redis</Filter>
+    </None>
+    <None Include="Logic\AI\HFSM\Readme.md">
+      <Filter>Logic\AI\HFSM</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Logic\AI\BehaviorTree\ReadMe.txt">
+      <Filter>Logic\AI\BehaviorTree</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

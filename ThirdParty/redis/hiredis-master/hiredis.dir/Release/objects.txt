@@ -1,0 +1,8 @@
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/Release/alloc.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/Release/async.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/Release/dict.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/Release/hiredis.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/Release/net.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/Release/read.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/Release/sds.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/Release/sockcompat.obj

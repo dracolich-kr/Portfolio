@@ -3,5 +3,5 @@ namespace Protocol.L2W;
 enum eID : uint
 {
     None = 12000
-
+	, StartServer = 12001
 }

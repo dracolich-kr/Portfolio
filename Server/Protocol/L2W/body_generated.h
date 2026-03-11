@@ -8,4 +8,54 @@
 
 #include "id_generated.h"
 
+namespace Protocol {
+namespace L2W {
+
+struct StartServer;
+struct StartServerBuilder;
+
+struct StartServer FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
+  typedef StartServerBuilder Builder;
+  enum FlatBuffersVTableOffset FLATBUFFERS_VTABLE_UNDERLYING_TYPE {
+    VT_A = 4
+  };
+  int32_t a() const {
+    return GetField<int32_t>(VT_A, 0);
+  }
+  bool Verify(flatbuffers::Verifier &verifier) const {
+    return VerifyTableStart(verifier) &&
+           VerifyField<int32_t>(verifier, VT_A) &&
+           verifier.EndTable();
+  }
+};
+
+struct StartServerBuilder {
+  typedef StartServer Table;
+  flatbuffers::FlatBufferBuilder &fbb_;
+  flatbuffers::uoffset_t start_;
+  void add_a(int32_t a) {
+    fbb_.AddElement<int32_t>(StartServer::VT_A, a, 0);
+  }
+  explicit StartServerBuilder(flatbuffers::FlatBufferBuilder &_fbb)
+        : fbb_(_fbb) {
+    start_ = fbb_.StartTable();
+  }
+  flatbuffers::Offset<StartServer> Finish() {
+    const auto end = fbb_.EndTable(start_);
+    auto o = flatbuffers::Offset<StartServer>(end);
+    return o;
+  }
+};
+
+inline flatbuffers::Offset<StartServer> CreateStartServer(
+    flatbuffers::FlatBufferBuilder &_fbb,
+    int32_t a = 0) {
+  StartServerBuilder builder_(_fbb);
+  builder_.add_a(a);
+  return builder_.Finish();
+}
+
+}  // namespace L2W
+}  // namespace Protocol
+
 #endif  // FLATBUFFERS_GENERATED_BODY_PROTOCOL_L2W_H_

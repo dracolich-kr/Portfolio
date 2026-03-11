@@ -7,62 +7,222 @@
 #include "flatbuffers/flatbuffers.h"
 
 #include "id_generated.h"
+#include "Common_generated.h"
 
 namespace Protocol {
 namespace S2C {
 
-struct ReqLogin;
-struct ReqLoginBuilder;
+struct AckLogin;
+struct AckLoginBuilder;
 
-struct ReqLogin FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
-  typedef ReqLoginBuilder Builder;
-  enum FlatBuffersVTableOffset FLATBUFFERS_VTABLE_UNDERLYING_TYPE {
-    VT_ID = 4,
-    VT_A = 6
+struct Root;
+struct RootBuilder;
+
+enum Packet : uint8_t {
+  Packet_NONE = 0,
+  Packet_AckLogin = 1,
+  Packet_MIN = Packet_NONE,
+  Packet_MAX = Packet_AckLogin
+};
+
+inline const Packet (&EnumValuesPacket())[2] {
+  static const Packet values[] = {
+    Packet_NONE,
+    Packet_AckLogin
   };
-  Protocol::S2C::eID id() const {
-    return static_cast<Protocol::S2C::eID>(GetField<uint32_t>(VT_ID, 10001));
-  }
+  return values;
+}
+
+inline const char * const *EnumNamesPacket() {
+  static const char * const names[3] = {
+    "NONE",
+    "AckLogin",
+    nullptr
+  };
+  return names;
+}
+
+inline const char *EnumNamePacket(Packet e) {
+  if (flatbuffers::IsOutRange(e, Packet_NONE, Packet_AckLogin)) return "";
+  const size_t index = static_cast<size_t>(e);
+  return EnumNamesPacket()[index];
+}
+
+template<typename T> struct PacketTraits {
+  static const Packet enum_value = Packet_NONE;
+};
+
+template<> struct PacketTraits<Protocol::S2C::AckLogin> {
+  static const Packet enum_value = Packet_AckLogin;
+};
+
+bool VerifyPacket(flatbuffers::Verifier &verifier, const void *obj, Packet type);
+bool VerifyPacketVector(flatbuffers::Verifier &verifier, const flatbuffers::Vector<flatbuffers::Offset<void>> *values, const flatbuffers::Vector<uint8_t> *types);
+
+struct AckLogin FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
+  typedef AckLoginBuilder Builder;
+  enum FlatBuffersVTableOffset FLATBUFFERS_VTABLE_UNDERLYING_TYPE {
+    VT_A = 4,
+    VT_VEC = 6
+  };
   int32_t a() const {
     return GetField<int32_t>(VT_A, 0);
   }
+  const Common::Vector3 *vec() const {
+    return GetStruct<const Common::Vector3 *>(VT_VEC);
+  }
   bool Verify(flatbuffers::Verifier &verifier) const {
     return VerifyTableStart(verifier) &&
-           VerifyField<uint32_t>(verifier, VT_ID) &&
            VerifyField<int32_t>(verifier, VT_A) &&
+           VerifyField<Common::Vector3>(verifier, VT_VEC) &&
            verifier.EndTable();
   }
 };
 
-struct ReqLoginBuilder {
-  typedef ReqLogin Table;
+struct AckLoginBuilder {
+  typedef AckLogin Table;
   flatbuffers::FlatBufferBuilder &fbb_;
   flatbuffers::uoffset_t start_;
-  void add_id(Protocol::S2C::eID id) {
-    fbb_.AddElement<uint32_t>(ReqLogin::VT_ID, static_cast<uint32_t>(id), 10001);
-  }
   void add_a(int32_t a) {
-    fbb_.AddElement<int32_t>(ReqLogin::VT_A, a, 0);
+    fbb_.AddElement<int32_t>(AckLogin::VT_A, a, 0);
   }
-  explicit ReqLoginBuilder(flatbuffers::FlatBufferBuilder &_fbb)
+  void add_vec(const Common::Vector3 *vec) {
+    fbb_.AddStruct(AckLogin::VT_VEC, vec);
+  }
+  explicit AckLoginBuilder(flatbuffers::FlatBufferBuilder &_fbb)
         : fbb_(_fbb) {
     start_ = fbb_.StartTable();
   }
-  flatbuffers::Offset<ReqLogin> Finish() {
+  flatbuffers::Offset<AckLogin> Finish() {
     const auto end = fbb_.EndTable(start_);
-    auto o = flatbuffers::Offset<ReqLogin>(end);
+    auto o = flatbuffers::Offset<AckLogin>(end);
     return o;
   }
 };
 
-inline flatbuffers::Offset<ReqLogin> CreateReqLogin(
+inline flatbuffers::Offset<AckLogin> CreateAckLogin(
     flatbuffers::FlatBufferBuilder &_fbb,
-    Protocol::S2C::eID id = Protocol::S2C::eID_ReqLogin,
-    int32_t a = 0) {
-  ReqLoginBuilder builder_(_fbb);
+    int32_t a = 0,
+    const Common::Vector3 *vec = 0) {
+  AckLoginBuilder builder_(_fbb);
+  builder_.add_vec(vec);
   builder_.add_a(a);
-  builder_.add_id(id);
   return builder_.Finish();
+}
+
+struct Root FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
+  typedef RootBuilder Builder;
+  enum FlatBuffersVTableOffset FLATBUFFERS_VTABLE_UNDERLYING_TYPE {
+    VT_PACKET_TYPE = 4,
+    VT_PACKET = 6
+  };
+  Protocol::S2C::Packet packet_type() const {
+    return static_cast<Protocol::S2C::Packet>(GetField<uint8_t>(VT_PACKET_TYPE, 0));
+  }
+  const void *packet() const {
+    return GetPointer<const void *>(VT_PACKET);
+  }
+  template<typename T> const T *packet_as() const;
+  const Protocol::S2C::AckLogin *packet_as_AckLogin() const {
+    return packet_type() == Protocol::S2C::Packet_AckLogin ? static_cast<const Protocol::S2C::AckLogin *>(packet()) : nullptr;
+  }
+  bool Verify(flatbuffers::Verifier &verifier) const {
+    return VerifyTableStart(verifier) &&
+           VerifyField<uint8_t>(verifier, VT_PACKET_TYPE) &&
+           VerifyOffset(verifier, VT_PACKET) &&
+           VerifyPacket(verifier, packet(), packet_type()) &&
+           verifier.EndTable();
+  }
+};
+
+template<> inline const Protocol::S2C::AckLogin *Root::packet_as<Protocol::S2C::AckLogin>() const {
+  return packet_as_AckLogin();
+}
+
+struct RootBuilder {
+  typedef Root Table;
+  flatbuffers::FlatBufferBuilder &fbb_;
+  flatbuffers::uoffset_t start_;
+  void add_packet_type(Protocol::S2C::Packet packet_type) {
+    fbb_.AddElement<uint8_t>(Root::VT_PACKET_TYPE, static_cast<uint8_t>(packet_type), 0);
+  }
+  void add_packet(flatbuffers::Offset<void> packet) {
+    fbb_.AddOffset(Root::VT_PACKET, packet);
+  }
+  explicit RootBuilder(flatbuffers::FlatBufferBuilder &_fbb)
+        : fbb_(_fbb) {
+    start_ = fbb_.StartTable();
+  }
+  flatbuffers::Offset<Root> Finish() {
+    const auto end = fbb_.EndTable(start_);
+    auto o = flatbuffers::Offset<Root>(end);
+    return o;
+  }
+};
+
+inline flatbuffers::Offset<Root> CreateRoot(
+    flatbuffers::FlatBufferBuilder &_fbb,
+    Protocol::S2C::Packet packet_type = Protocol::S2C::Packet_NONE,
+    flatbuffers::Offset<void> packet = 0) {
+  RootBuilder builder_(_fbb);
+  builder_.add_packet(packet);
+  builder_.add_packet_type(packet_type);
+  return builder_.Finish();
+}
+
+inline bool VerifyPacket(flatbuffers::Verifier &verifier, const void *obj, Packet type) {
+  switch (type) {
+    case Packet_NONE: {
+      return true;
+    }
+    case Packet_AckLogin: {
+      auto ptr = reinterpret_cast<const Protocol::S2C::AckLogin *>(obj);
+      return verifier.VerifyTable(ptr);
+    }
+    default: return true;
+  }
+}
+
+inline bool VerifyPacketVector(flatbuffers::Verifier &verifier, const flatbuffers::Vector<flatbuffers::Offset<void>> *values, const flatbuffers::Vector<uint8_t> *types) {
+  if (!values || !types) return !values && !types;
+  if (values->size() != types->size()) return false;
+  for (flatbuffers::uoffset_t i = 0; i < values->size(); ++i) {
+    if (!VerifyPacket(
+        verifier,  values->Get(i), types->GetEnum<Packet>(i))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+inline const Protocol::S2C::Root *GetRoot(const void *buf) {
+  return flatbuffers::GetRoot<Protocol::S2C::Root>(buf);
+}
+
+inline const Protocol::S2C::Root *GetSizePrefixedRoot(const void *buf) {
+  return flatbuffers::GetSizePrefixedRoot<Protocol::S2C::Root>(buf);
+}
+
+inline bool VerifyRootBuffer(
+    flatbuffers::Verifier &verifier) {
+  return verifier.VerifyBuffer<Protocol::S2C::Root>(nullptr);
+}
+
+inline bool VerifySizePrefixedRootBuffer(
+    flatbuffers::Verifier &verifier) {
+  return verifier.VerifySizePrefixedBuffer<Protocol::S2C::Root>(nullptr);
+}
+
+inline void FinishRootBuffer(
+    flatbuffers::FlatBufferBuilder &fbb,
+    flatbuffers::Offset<Protocol::S2C::Root> root) {
+  fbb.Finish(root);
+}
+
+inline void FinishSizePrefixedRootBuffer(
+    flatbuffers::FlatBufferBuilder &fbb,
+    flatbuffers::Offset<Protocol::S2C::Root> root) {
+  fbb.FinishSizePrefixed(root);
 }
 
 }  // namespace S2C

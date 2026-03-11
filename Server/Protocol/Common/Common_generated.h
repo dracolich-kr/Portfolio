@@ -16,6 +16,50 @@ struct Vector2;
 
 struct Position;
 
+struct vecPosition;
+
+struct Temp;
+struct TempBuilder;
+
+enum classType : int32_t {
+  classType_None = 0,
+  classType_Knight = 1,
+  classType_Archer = 2,
+  classType_Wizard = 3,
+  classType_Max = 4,
+  classType_MIN = classType_None,
+  classType_MAX = classType_Max
+};
+
+inline const classType (&EnumValuesclassType())[5] {
+  static const classType values[] = {
+    classType_None,
+    classType_Knight,
+    classType_Archer,
+    classType_Wizard,
+    classType_Max
+  };
+  return values;
+}
+
+inline const char * const *EnumNamesclassType() {
+  static const char * const names[6] = {
+    "None",
+    "Knight",
+    "Archer",
+    "Wizard",
+    "Max",
+    nullptr
+  };
+  return names;
+}
+
+inline const char *EnumNameclassType(classType e) {
+  if (flatbuffers::IsOutRange(e, classType_None, classType_Max)) return "";
+  const size_t index = static_cast<size_t>(e);
+  return EnumNamesclassType()[index];
+}
+
 FLATBUFFERS_MANUALLY_ALIGNED_STRUCT(4) Vector3 FLATBUFFERS_FINAL_CLASS {
  private:
   float x_;
@@ -107,6 +151,84 @@ FLATBUFFERS_MANUALLY_ALIGNED_STRUCT(4) Position FLATBUFFERS_FINAL_CLASS {
   }
 };
 FLATBUFFERS_STRUCT_END(Position, 16);
+
+FLATBUFFERS_MANUALLY_ALIGNED_STRUCT(4) vecPosition FLATBUFFERS_FINAL_CLASS {
+ private:
+  Common::Vector3 position_[3];
+  float lookat_;
+
+ public:
+  vecPosition()
+      : position_(),
+        lookat_(0) {
+  }
+  vecPosition(float _lookat)
+      : position_(),
+        lookat_(flatbuffers::EndianScalar(_lookat)) {
+  }
+  vecPosition(flatbuffers::span<const Common::Vector3, 3> _position, float _lookat)
+      : lookat_(flatbuffers::EndianScalar(_lookat)) {
+    flatbuffers::CastToArray(position_).CopyFromSpan(_position);
+  }
+  const flatbuffers::Array<Common::Vector3, 3> *position() const {
+    return &flatbuffers::CastToArray(position_);
+  }
+  float lookat() const {
+    return flatbuffers::EndianScalar(lookat_);
+  }
+};
+FLATBUFFERS_STRUCT_END(vecPosition, 40);
+
+struct Temp FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
+  typedef TempBuilder Builder;
+  enum FlatBuffersVTableOffset FLATBUFFERS_VTABLE_UNDERLYING_TYPE {
+    VT_X = 4,
+    VT_Y = 6
+  };
+  float x() const {
+    return GetField<float>(VT_X, 0.0f);
+  }
+  float y() const {
+    return GetField<float>(VT_Y, 0.0f);
+  }
+  bool Verify(flatbuffers::Verifier &verifier) const {
+    return VerifyTableStart(verifier) &&
+           VerifyField<float>(verifier, VT_X) &&
+           VerifyField<float>(verifier, VT_Y) &&
+           verifier.EndTable();
+  }
+};
+
+struct TempBuilder {
+  typedef Temp Table;
+  flatbuffers::FlatBufferBuilder &fbb_;
+  flatbuffers::uoffset_t start_;
+  void add_x(float x) {
+    fbb_.AddElement<float>(Temp::VT_X, x, 0.0f);
+  }
+  void add_y(float y) {
+    fbb_.AddElement<float>(Temp::VT_Y, y, 0.0f);
+  }
+  explicit TempBuilder(flatbuffers::FlatBufferBuilder &_fbb)
+        : fbb_(_fbb) {
+    start_ = fbb_.StartTable();
+  }
+  flatbuffers::Offset<Temp> Finish() {
+    const auto end = fbb_.EndTable(start_);
+    auto o = flatbuffers::Offset<Temp>(end);
+    return o;
+  }
+};
+
+inline flatbuffers::Offset<Temp> CreateTemp(
+    flatbuffers::FlatBufferBuilder &_fbb,
+    float x = 0.0f,
+    float y = 0.0f) {
+  TempBuilder builder_(_fbb);
+  builder_.add_y(y);
+  builder_.add_x(x);
+  return builder_.Finish();
+}
 
 }  // namespace Common
 

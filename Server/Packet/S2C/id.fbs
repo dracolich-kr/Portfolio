@@ -3,5 +3,6 @@ namespace Protocol.S2C;
 enum eID : uint
 {
 	None = 10000
-	, ReqLogin
+	, AckLogin
 }
+

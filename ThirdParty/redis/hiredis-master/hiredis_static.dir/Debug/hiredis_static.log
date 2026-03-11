@@ -1,0 +1,59 @@
+﻿  Building Custom Rule C:/Project/MyServer/ThirdParty/redis/hiredis-master/CMakeLists.txt
+  alloc.c
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\alloc.c(40,17): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\alloc.c(59,21): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  async.c
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(62,32): warning C4267: '함수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(81,10): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(82,10): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(445,17): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(452,17): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(504,13): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(505,13): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(506,13): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(785,20): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(810,16): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\async.c(818,16): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  dict.c
+  hiredis.c
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\hiredis.c(341,31): warning C4267: '+=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\hiredis.c(490,19): warning C4267: '+=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\hiredis.c(509,16): warning C4267: '+=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\hiredis.c(950,21): warning C4244: '=': 'ssize_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  net.c
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\net.c(275,14): warning C4267: '함수': 'size_t'에서 'socklen_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\net.c(320,9): warning C4267: '함수': 'size_t'에서 'socklen_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\net.c(324,9): warning C4267: '함수': 'size_t'에서 'socklen_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\net.c(460,21): warning C4267: '함수': 'size_t'에서 'socklen_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\net.c(483,13): warning C4267: '함수': 'size_t'에서 'socklen_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\net.c(609,4): warning C4102: 'oom': 참조되지 않은 레이블입니다.
+  read.c
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\read.c(216,37): warning C4146: 단항 빼기 연산자가 부호 없는 형식에 적용되었습니다. 결과는 역시 unsigned입니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\read.c(232,16): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\read.c(302,29): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\read.c(304,36): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\read.c(406,36): warning C4267: '=': 'size_t'에서 'unsigned long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\read.c(429,27): warning C4244: '+=': '__int64'에서 'unsigned long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\read.c(442,49): warning C4312: '형식 캐스트': 'long'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\read.c(539,45): warning C4312: '형식 캐스트': 'long'에서 더 큰 'void *'(으)로의 변환입니다.
+  sds.c
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(101,24): warning C4267: '=': 'size_t'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(106,23): warning C4267: '=': 'size_t'에서 'uint8_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(107,25): warning C4267: '=': 'size_t'에서 'uint8_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(113,23): warning C4267: '=': 'size_t'에서 'uint16_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(114,25): warning C4267: '=': 'size_t'에서 'uint16_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(120,23): warning C4267: '=': 'size_t'에서 'uint32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(121,25): warning C4267: '=': 'size_t'에서 'uint32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(177,19): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(459,12): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(488,12): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(587,9): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(615,22): warning C4267: '+=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(632,26): warning C4267: '+=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(650,26): warning C4267: '+=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(758,15): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(765,15): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Project\MyServer\ThirdParty\redis\hiredis-master\sds.c(789,28): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  sockcompat.c
+  코드를 생성하고 있습니다...
+  hiredis_static.vcxproj -> C:\Project\MyServer\ThirdParty\redis\hiredis-master\Debug\hiredis_staticd.lib

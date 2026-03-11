@@ -1,0 +1,8 @@
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/MinSizeRel/alloc.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/MinSizeRel/async.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/MinSizeRel/dict.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/MinSizeRel/hiredis.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/MinSizeRel/net.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/MinSizeRel/read.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/MinSizeRel/sds.obj
+C:/Project/MyServer/ThirdParty/redis/hiredis-master/hiredis.dir/MinSizeRel/sockcompat.obj

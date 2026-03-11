@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Project/rapidjson-master/example/CMakeLists.txt
+cl : 명령줄 warning D9002: 알 수 없는 '/std:c++11' 옵션을 무시합니다.
+  archiver.cpp
+  archivertest.cpp
+  코드를 생성하고 있습니다...
+  archivertest.vcxproj -> C:\Project\rapidjson-master\bin\Release\archivertest.exe

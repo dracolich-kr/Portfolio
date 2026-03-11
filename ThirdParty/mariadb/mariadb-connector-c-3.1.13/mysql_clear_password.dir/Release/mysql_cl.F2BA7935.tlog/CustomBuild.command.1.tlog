@@ -1,0 +1,10 @@
+^C:\PROJECT\MYSERVER\THIRDPARTY\MARIADB\MARIADB-CONNECTOR-C-3.1.13\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 -BC:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13 --check-stamp-file C:/Project/MyServer/ThirdParty/mariadb/mariadb-connector-c-3.1.13/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

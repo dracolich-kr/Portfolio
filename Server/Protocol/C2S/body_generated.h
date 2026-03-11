@@ -7,74 +7,180 @@
 #include "flatbuffers/flatbuffers.h"
 
 #include "id_generated.h"
+#include "Common_generated.h"
 
 namespace Protocol {
 namespace C2S {
 
-struct AckLogin;
-struct AckLoginBuilder;
+struct ReqLogin;
+struct ReqLoginBuilder;
 
-struct AckLogin FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
-  typedef AckLoginBuilder Builder;
+struct ReqTestMsg;
+struct ReqTestMsgBuilder;
+
+struct ReqLogin FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
+  typedef ReqLoginBuilder Builder;
   enum FlatBuffersVTableOffset FLATBUFFERS_VTABLE_UNDERLYING_TYPE {
-    VT_ID = 4,
-    VT_A = 6
+    VT_A = 4,
+    VT_VEC = 6,
+    VT_POS = 8,
+    VT_B = 10
   };
-  Protocol::C2S::eID id() const {
-    return static_cast<Protocol::C2S::eID>(GetField<uint32_t>(VT_ID, 20001));
+  float a() const {
+    return GetField<float>(VT_A, 0.0f);
   }
-  const flatbuffers::Vector<float> *a() const {
-    return GetPointer<const flatbuffers::Vector<float> *>(VT_A);
+  const flatbuffers::Vector<const Common::Vector3 *> *vec() const {
+    return GetPointer<const flatbuffers::Vector<const Common::Vector3 *> *>(VT_VEC);
+  }
+  const flatbuffers::Vector<const Common::vecPosition *> *pos() const {
+    return GetPointer<const flatbuffers::Vector<const Common::vecPosition *> *>(VT_POS);
+  }
+  int32_t b() const {
+    return GetField<int32_t>(VT_B, 0);
   }
   bool Verify(flatbuffers::Verifier &verifier) const {
     return VerifyTableStart(verifier) &&
-           VerifyField<uint32_t>(verifier, VT_ID) &&
-           VerifyOffset(verifier, VT_A) &&
-           verifier.VerifyVector(a()) &&
+           VerifyField<float>(verifier, VT_A) &&
+           VerifyOffset(verifier, VT_VEC) &&
+           verifier.VerifyVector(vec()) &&
+           VerifyOffset(verifier, VT_POS) &&
+           verifier.VerifyVector(pos()) &&
+           VerifyField<int32_t>(verifier, VT_B) &&
            verifier.EndTable();
   }
 };
 
-struct AckLoginBuilder {
-  typedef AckLogin Table;
+struct ReqLoginBuilder {
+  typedef ReqLogin Table;
   flatbuffers::FlatBufferBuilder &fbb_;
   flatbuffers::uoffset_t start_;
-  void add_id(Protocol::C2S::eID id) {
-    fbb_.AddElement<uint32_t>(AckLogin::VT_ID, static_cast<uint32_t>(id), 20001);
+  void add_a(float a) {
+    fbb_.AddElement<float>(ReqLogin::VT_A, a, 0.0f);
   }
-  void add_a(flatbuffers::Offset<flatbuffers::Vector<float>> a) {
-    fbb_.AddOffset(AckLogin::VT_A, a);
+  void add_vec(flatbuffers::Offset<flatbuffers::Vector<const Common::Vector3 *>> vec) {
+    fbb_.AddOffset(ReqLogin::VT_VEC, vec);
   }
-  explicit AckLoginBuilder(flatbuffers::FlatBufferBuilder &_fbb)
+  void add_pos(flatbuffers::Offset<flatbuffers::Vector<const Common::vecPosition *>> pos) {
+    fbb_.AddOffset(ReqLogin::VT_POS, pos);
+  }
+  void add_b(int32_t b) {
+    fbb_.AddElement<int32_t>(ReqLogin::VT_B, b, 0);
+  }
+  explicit ReqLoginBuilder(flatbuffers::FlatBufferBuilder &_fbb)
         : fbb_(_fbb) {
     start_ = fbb_.StartTable();
   }
-  flatbuffers::Offset<AckLogin> Finish() {
+  flatbuffers::Offset<ReqLogin> Finish() {
     const auto end = fbb_.EndTable(start_);
-    auto o = flatbuffers::Offset<AckLogin>(end);
+    auto o = flatbuffers::Offset<ReqLogin>(end);
     return o;
   }
 };
 
-inline flatbuffers::Offset<AckLogin> CreateAckLogin(
+inline flatbuffers::Offset<ReqLogin> CreateReqLogin(
     flatbuffers::FlatBufferBuilder &_fbb,
-    Protocol::C2S::eID id = Protocol::C2S::eID_AckLogin,
-    flatbuffers::Offset<flatbuffers::Vector<float>> a = 0) {
-  AckLoginBuilder builder_(_fbb);
+    float a = 0.0f,
+    flatbuffers::Offset<flatbuffers::Vector<const Common::Vector3 *>> vec = 0,
+    flatbuffers::Offset<flatbuffers::Vector<const Common::vecPosition *>> pos = 0,
+    int32_t b = 0) {
+  ReqLoginBuilder builder_(_fbb);
+  builder_.add_b(b);
+  builder_.add_pos(pos);
+  builder_.add_vec(vec);
   builder_.add_a(a);
-  builder_.add_id(id);
   return builder_.Finish();
 }
 
-inline flatbuffers::Offset<AckLogin> CreateAckLoginDirect(
+inline flatbuffers::Offset<ReqLogin> CreateReqLoginDirect(
     flatbuffers::FlatBufferBuilder &_fbb,
-    Protocol::C2S::eID id = Protocol::C2S::eID_AckLogin,
-    const std::vector<float> *a = nullptr) {
-  auto a__ = a ? _fbb.CreateVector<float>(*a) : 0;
-  return Protocol::C2S::CreateAckLogin(
+    float a = 0.0f,
+    const std::vector<Common::Vector3> *vec = nullptr,
+    const std::vector<Common::vecPosition> *pos = nullptr,
+    int32_t b = 0) {
+  auto vec__ = vec ? _fbb.CreateVectorOfStructs<Common::Vector3>(*vec) : 0;
+  auto pos__ = pos ? _fbb.CreateVectorOfStructs<Common::vecPosition>(*pos) : 0;
+  return Protocol::C2S::CreateReqLogin(
       _fbb,
-      id,
-      a__);
+      a,
+      vec__,
+      pos__,
+      b);
+}
+
+struct ReqTestMsg FLATBUFFERS_FINAL_CLASS : private flatbuffers::Table {
+  typedef ReqTestMsgBuilder Builder;
+  enum FlatBuffersVTableOffset FLATBUFFERS_VTABLE_UNDERLYING_TYPE {
+    VT_STR = 4,
+    VT_A = 6,
+    VT_AAA = 8
+  };
+  const flatbuffers::String *str() const {
+    return GetPointer<const flatbuffers::String *>(VT_STR);
+  }
+  int32_t a() const {
+    return GetField<int32_t>(VT_A, 0);
+  }
+  const Common::Temp *aaa() const {
+    return GetPointer<const Common::Temp *>(VT_AAA);
+  }
+  bool Verify(flatbuffers::Verifier &verifier) const {
+    return VerifyTableStart(verifier) &&
+           VerifyOffset(verifier, VT_STR) &&
+           verifier.VerifyString(str()) &&
+           VerifyField<int32_t>(verifier, VT_A) &&
+           VerifyOffset(verifier, VT_AAA) &&
+           verifier.VerifyTable(aaa()) &&
+           verifier.EndTable();
+  }
+};
+
+struct ReqTestMsgBuilder {
+  typedef ReqTestMsg Table;
+  flatbuffers::FlatBufferBuilder &fbb_;
+  flatbuffers::uoffset_t start_;
+  void add_str(flatbuffers::Offset<flatbuffers::String> str) {
+    fbb_.AddOffset(ReqTestMsg::VT_STR, str);
+  }
+  void add_a(int32_t a) {
+    fbb_.AddElement<int32_t>(ReqTestMsg::VT_A, a, 0);
+  }
+  void add_aaa(flatbuffers::Offset<Common::Temp> aaa) {
+    fbb_.AddOffset(ReqTestMsg::VT_AAA, aaa);
+  }
+  explicit ReqTestMsgBuilder(flatbuffers::FlatBufferBuilder &_fbb)
+        : fbb_(_fbb) {
+    start_ = fbb_.StartTable();
+  }
+  flatbuffers::Offset<ReqTestMsg> Finish() {
+    const auto end = fbb_.EndTable(start_);
+    auto o = flatbuffers::Offset<ReqTestMsg>(end);
+    return o;
+  }
+};
+
+inline flatbuffers::Offset<ReqTestMsg> CreateReqTestMsg(
+    flatbuffers::FlatBufferBuilder &_fbb,
+    flatbuffers::Offset<flatbuffers::String> str = 0,
+    int32_t a = 0,
+    flatbuffers::Offset<Common::Temp> aaa = 0) {
+  ReqTestMsgBuilder builder_(_fbb);
+  builder_.add_aaa(aaa);
+  builder_.add_a(a);
+  builder_.add_str(str);
+  return builder_.Finish();
+}
+
+inline flatbuffers::Offset<ReqTestMsg> CreateReqTestMsgDirect(
+    flatbuffers::FlatBufferBuilder &_fbb,
+    const char *str = nullptr,
+    int32_t a = 0,
+    flatbuffers::Offset<Common::Temp> aaa = 0) {
+  auto str__ = str ? _fbb.CreateString(str) : 0;
+  return Protocol::C2S::CreateReqTestMsg(
+      _fbb,
+      str__,
+      a,
+      aaa);
 }
 
 }  // namespace C2S

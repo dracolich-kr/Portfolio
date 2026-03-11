@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3eeee153-b92c-448f-849a-aafaefbcce4d}</ProjectGuid>
+    <RootNamespace>Server</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir);$(SolutionDir)Server;$(SolutionDir)Protocol;$(SolutionDir)Protocol\Common;$(SolutionDir)..\ThirdParty\redis\include;$(SolutionDir)..\ThirdParty\asio\asio-1.22.1\include;$(SolutionDir)..\ThirdParty\rapidjson-master\include;$(SolutionDir)..\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;$(SolutionDir)..\ThirdParty\FlatBuffer\include;$(SolutionDir)..\ThirdParty\log4cplus\log4cplus-2.0.8\include;$(SolutionDir)..\ThirdParty\Lua\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\ThirdParty\asio\asio-1.22.1\src;$(SolutionDir)..\ThirdParty\redis\lib\$(Configuration);$(SolutionDir)..\ThirdParty\mariadb\mariadb-connector-c-3.1.13\libmariadb\$(Configuration);$(SolutionDir)..\ThirdParty\FlatBuffer\lib\$(Configuration);$(SolutionDir)..\ThirdParty\log4cplus\log4cplus-2.0.8\lib;$(SolutionDir)..\ThirdParty\Lua;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(SolutionDir)..\ThirdParty\redis\lib\$(Configuration);$(SolutionDir)..\ThirdParty\FlatBuffer\lib\$(Configuration);$(SolutionDir)..\ThirdParty\log4cplus\log4cplus-2.0.8\msvc14\x64\bin.Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Server;$(SolutionDir)Protocol;$(SolutionDir)..\ThirdParty\redis\include;$(SolutionDir)..\ThirdParty\asio\asio-1.22.1\include;$(SolutionDir)..\ThirdParty\rapidjson-master\include;$(SolutionDir)..\ThirdParty\mariadb\mariadb-connector-c-3.1.13\include;$(SolutionDir)..\ThirdParty\FlatBuffer\include;$(SolutionDir)..\ThirdParty\log4cplus\log4cplus-2.0.8\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Framework\Application.cpp" />
+    <ClCompile Include="..\Framework\DataBase\MySql\Command.cpp" />
+    <ClCompile Include="..\Framework\DataBase\MySql\Query.cpp" />
+    <ClCompile Include="..\Framework\DataBase\MySql\Session.cpp" />
+    <ClCompile Include="..\Framework\DataBase\MySql\SessionPool.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Command.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\DBThread.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Query.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Result.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Session.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlDateTime.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlDouble.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlFloat.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlInt16.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlInt32.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlInt64.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlInt8.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlString.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlUInt16.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlUInt32.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlUInt64.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlUInt8.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlValue.cpp" />
+    <ClCompile Include="..\Framework\DataBase\Odbc\Value\SqlWString.cpp" />
+    <ClCompile Include="..\Framework\Handler\Handler.cpp" />
+    <ClCompile Include="..\Framework\Handler\HandlerManager.cpp" />
+    <ClCompile Include="..\Framework\Handler\HandlerRegister.cpp" />
+    <ClCompile Include="..\Framework\Logger\Logger.cpp" />
+    <ClCompile Include="..\Framework\Lua\Function.cpp" />
+    <ClCompile Include="..\Framework\Lua\Session.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Lua\Value\MetaTable.cpp" />
+    <ClCompile Include="..\Framework\Math\Common.cpp" />
+    <ClCompile Include="..\Framework\Memory\Allocator.cpp" />
+    <ClCompile Include="..\Framework\Memory\FlatBufferAllocator.cpp" />
+    <ClCompile Include="..\Framework\Memory\MemoryPool.cpp" />
+    <ClCompile Include="..\Framework\Memory\MemoryBlockList.cpp" />
+    <ClCompile Include="..\Framework\Parser\iniParser.cpp" />
+    <ClCompile Include="..\Framework\Parser\JsonParser.cpp" />
+    <ClCompile Include="..\Framework\Redis\Cluster\Cluster.cpp" />
+    <ClCompile Include="..\Framework\Redis\Command.cpp" />
+    <ClCompile Include="..\Framework\Redis\Bit\Bit.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Redis\Executor\Executor.cpp" />
+    <ClCompile Include="..\Framework\Redis\Hashes\Hashes.cpp" />
+    <ClCompile Include="..\Framework\Redis\Lists\Lists.cpp" />
+    <ClCompile Include="..\Framework\Redis\PipeLine\PipeLine.cpp" />
+    <ClCompile Include="..\Framework\Redis\Sets\Sets.cpp" />
+    <ClCompile Include="..\Framework\Redis\SortedSets\SortedSets.cpp" />
+    <ClCompile Include="..\Framework\Redis\Strings\Strings.cpp" />
+    <ClCompile Include="..\Framework\Redis\Session.cpp" />
+    <ClCompile Include="..\Framework\Task\TaskThread.cpp" />
+    <ClCompile Include="..\Framework\Thread\Thread.cpp" />
+    <ClCompile Include="..\Framework\Thread\ThreadManager.cpp" />
+    <ClCompile Include="..\Framework\Time\DateTime.cpp" />
+    <ClCompile Include="..\Framework\Time\TickTimer.cpp" />
+    <ClCompile Include="..\Framework\Time\TimeSpan.cpp" />
+    <ClCompile Include="..\Network\Asio\AsioAccept.cpp" />
+    <ClCompile Include="..\Network\Asio\AsioThread.cpp" />
+    <ClCompile Include="..\Network\ClientSocket.cpp" />
+    <ClCompile Include="..\Network\Iocp\IocpOverlapped.cpp" />
+    <ClCompile Include="..\Network\Network.cpp" />
+    <ClCompile Include="..\Network\NetworkBuffer.cpp" />
+    <ClCompile Include="..\Network\Packet\PacketQueue.cpp" />
+    <ClCompile Include="..\Network\RingBuffer.cpp" />
+    <ClCompile Include="..\Network\Session.cpp" />
+    <ClCompile Include="..\Network\SocketUtil.cpp" />
+    <ClCompile Include="..\Protocol\C2S\Sender.cpp" />
+    <ClCompile Include="Logic\AI\BehaviorTree\BehaviorTree.cpp" />
+    <ClCompile Include="Logic\AI\BehaviorTree\Decorator\Decorator.cpp" />
+    <ClCompile Include="Logic\AI\BehaviorTree\Paralle\Paralle.cpp" />
+    <ClCompile Include="Logic\AI\BehaviorTree\Selector\Selector.cpp" />
+    <ClCompile Include="Logic\AI\BehaviorTree\Sequence\Sequence.cpp" />
+    <ClCompile Include="Logic\AI\BehaviorTree\Service\Service.cpp" />
+    <ClCompile Include="Logic\AI\BehaviorTree\Task\Task.cpp" />
+    <ClCompile Include="Logic\Attribute\Attribute.cpp" />
+    <ClCompile Include="Logic\Attribute\Stat\Stat.cpp" />
+    <ClCompile Include="Logic\Attribute\Stat\StatGroup.cpp" />
+    <ClCompile Include="Logic\Collision\Circle.cpp" />
+    <ClCompile Include="Logic\Collision\Collision.cpp" />
+    <ClCompile Include="Logic\Collision\Line.cpp" />
+    <ClCompile Include="Logic\Collision\Point.cpp" />
+    <ClCompile Include="Logic\Collision\Rectangle.cpp" />
+    <ClCompile Include="Logic\Entity\CombatObject\CombatObject.cpp" />
+    <ClCompile Include="Logic\Entity\Entity.cpp" />
+    <ClCompile Include="Logic\Entity\EntityManager.cpp" />
+    <ClCompile Include="Logic\Entity\Monster\Monster.cpp" />
+    <ClCompile Include="Logic\Entity\Monster\MonsterState\MonsterState.cpp" />
+    <ClCompile Include="Logic\FieldObject\FieldItem.cpp" />
+    <ClCompile Include="Logic\FieldObject\FieldObjectKeyGenerator.cpp" />
+    <ClCompile Include="Logic\FieldObject\FieldManager.cpp" />
+    <ClCompile Include="Logic\FieldObject\FieldObject.cpp" />
+    <ClCompile Include="Logic\Item\Inventory.cpp" />
+    <ClCompile Include="Logic\Item\Item.cpp" />
+    <ClCompile Include="Logic\Item\ItemKeyGenerator.cpp" />
+    <ClCompile Include="Logic\Item\ItemOption.cpp" />
+    <ClCompile Include="Logic\Loader\ItemDict.cpp" />
+    <ClCompile Include="Logic\Loader\LoadManager.cpp" />
+    <ClCompile Include="Logic\Loader\SkillDict.cpp" />
+    <ClCompile Include="Logic\LogicThread.cpp" />
+    <ClCompile Include="Logic\Manager\DropManager.cpp" />
+    <ClCompile Include="Logic\Manager\KeyGenerator.cpp" />
+    <ClCompile Include="Logic\Player\Player.cpp" />
+    <ClCompile Include="Logic\Player\Resource\Resource.cpp" />
+    <ClCompile Include="Logic\Sector\Cell\Cell.cpp" />
+    <ClCompile Include="Logic\Sector\Cell\CellManager.cpp" />
+    <ClCompile Include="Logic\Sector\Grid\Grid.cpp" />
+    <ClCompile Include="Logic\Sector\Grid\GridManager.cpp" />
+    <ClCompile Include="Logic\Sector\NavMesh\NavmeshManager.cpp" />
+    <ClCompile Include="Logic\Sector\Sector.cpp" />
+    <ClCompile Include="Logic\Sector\SectorManager.cpp" />
+    <ClCompile Include="Logic\Sector\SectorScript.cpp" />
+    <ClCompile Include="Logic\Session\ServerSession.cpp" />
+    <ClCompile Include="Logic\Session\UserSession.cpp" />
+    <ClCompile Include="Logic\Session\SessionManager.cpp" />
+    <ClCompile Include="Logic\Skill\EffectLogic\EffectLogic.cpp" />
+    <ClCompile Include="Logic\Skill\Skill.cpp" />
+    <ClCompile Include="Logic\Skill\SkillManager.cpp" />
+    <ClCompile Include="Logic\Skill\SkillState.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="..\Network\Asio\Asio.cpp" />
+    <ClCompile Include="..\Network\Socket.cpp" />
+    <ClCompile Include="..\Network\Iocp\Iocp.cpp" />
+    <ClCompile Include="..\Network\Iocp\IocpThread.cpp" />
+    <ClCompile Include="..\Network\Packet\Packet.cpp" />
+    <ClCompile Include="..\Network\ListenSocket.cpp" />
+    <ClCompile Include="..\Network\BSDSocket.cpp" />
+    <ClCompile Include="Pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CommonHeader.h" />
+    <ClInclude Include="..\Common\DataStructure.h" />
+    <ClInclude Include="..\Common\ErrorCode.h" />
+    <ClInclude Include="..\Common\Interface.h" />
+    <ClInclude Include="..\Framework\Application.h" />
+    <ClInclude Include="..\Framework\DataBase\Command.h" />
+    <ClInclude Include="..\Framework\DataBase\MySql\Command.h" />
+    <ClInclude Include="..\Framework\DataBase\MySql\Query.h" />
+    <ClInclude Include="..\Framework\DataBase\MySql\Session.h" />
+    <ClInclude Include="..\Framework\DataBase\MySql\SessionPool.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Command.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\DBThread.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Result.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlDateTime.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlDouble.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlFloat.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlInt16.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlInt32.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlInt64.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlInt8.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlString.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlUInt16.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlUInt32.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlUInt64.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlUInt8.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlValue.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Value\SqlWString.h" />
+    <ClInclude Include="..\Framework\DataBase\Result.h" />
+    <ClInclude Include="..\Framework\DataBase\Session.h" />
+    <ClInclude Include="..\Framework\Handler\Handler.h" />
+    <ClInclude Include="..\Framework\Handler\HandlerManager.h" />
+    <ClInclude Include="..\Framework\Handler\HandlerRegister.h" />
+    <ClInclude Include="..\Framework\Lua\Function.h" />
+    <ClInclude Include="..\Framework\Lua\Session.h" />
+    <ClInclude Include="..\Framework\Lua\Value\BaseValue.h" />
+    <ClInclude Include="..\Framework\Lua\Value\Bool.h" />
+    <ClInclude Include="..\Framework\Lua\Value\Double.h" />
+    <ClInclude Include="..\Framework\Lua\Value\Float.h" />
+    <ClInclude Include="..\Framework\Lua\Value\Int16.h" />
+    <ClInclude Include="..\Framework\Lua\Value\Int32.h" />
+    <ClInclude Include="..\Framework\Lua\Value\Int64.h" />
+    <ClInclude Include="..\Framework\Lua\Value\Int8.h" />
+    <ClInclude Include="..\Framework\Lua\Value\MetaTable.h" />
+    <ClInclude Include="..\Framework\Lua\Value\String.h" />
+    <ClInclude Include="..\Framework\Math\Common.h" />
+    <ClInclude Include="..\Framework\Math\Vector2.h" />
+    <ClInclude Include="..\Framework\Math\Vector2.hpp" />
+    <ClInclude Include="..\Framework\Math\Vector3.h" />
+    <ClInclude Include="..\Framework\Math\Vector3.hpp" />
+    <ClInclude Include="..\Framework\Memory\Allocator.h" />
+    <ClInclude Include="..\Framework\Memory\FlatBufferAllocator.h" />
+    <ClInclude Include="..\Framework\Memory\MemoryBlockList.h" />
+    <ClInclude Include="..\Framework\Memory\ObjectPool.hpp" />
+    <ClInclude Include="..\Framework\Redis\Command.hpp" />
+    <ClInclude Include="..\Framework\Redis\Lists\ListsPush.hpp" />
+    <ClInclude Include="..\Framework\Redis\Lists\ListsPushEx.hpp" />
+    <ClInclude Include="..\Framework\Task\TaskThreadPool.h" />
+    <ClInclude Include="..\Network\Asio\AsioAccept.h" />
+    <ClInclude Include="..\Network\Asio\AsioThread.h" />
+    <ClInclude Include="..\Network\ClientSocket.h" />
+    <ClInclude Include="..\Network\Iocp\IocpOverlapped.h" />
+    <ClInclude Include="..\Network\Network.h" />
+    <ClInclude Include="..\Network\NetworkBuffer.h" />
+    <ClInclude Include="..\Network\Packet\PacketQueue.h" />
+    <ClInclude Include="..\Network\RingBuffer.h" />
+    <ClInclude Include="..\Network\Session.h" />
+    <ClInclude Include="..\Network\SocketUtil.h" />
+    <ClInclude Include="..\Protocol\C2S\body_generated.h" />
+    <ClInclude Include="..\Protocol\C2S\id_generated.h" />
+    <ClInclude Include="..\Protocol\C2S\Sender.h" />
+    <ClInclude Include="..\Protocol\Common\Common_generated.h" />
+    <ClInclude Include="..\Protocol\L2L\body_generated.h" />
+    <ClInclude Include="..\Protocol\L2L\id_generated.h" />
+    <ClInclude Include="..\Protocol\ProtocolIdRange_generated.h" />
+    <ClInclude Include="..\Protocol\S2C\body_generated.h" />
+    <ClInclude Include="..\Protocol\S2C\id_generated.h" />
+    <ClInclude Include="..\Framework\Core\Singleton.h" />
+    <ClInclude Include="..\Framework\Core\ToConvert.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Query.h" />
+    <ClInclude Include="..\Framework\DataBase\Odbc\Session.h" />
+    <ClInclude Include="..\Framework\Logger\Logger.h" />
+    <ClInclude Include="..\Framework\Memory\InterfaceMemory.h" />
+    <ClInclude Include="..\Framework\Memory\MemoryPool.h" />
+    <ClInclude Include="..\Framework\Memory\ObjectPool.h" />
+    <ClInclude Include="..\Framework\Parser\iniParser.h" />
+    <ClInclude Include="..\Framework\Core\Random.h" />
+    <ClInclude Include="..\Framework\Parser\JsonParser.h" />
+    <ClInclude Include="..\Framework\Redis\Cluster\Cluster.h" />
+    <ClInclude Include="..\Framework\Redis\Bit\Bit.h" />
+    <ClInclude Include="..\Framework\Redis\Command.h" />
+    <ClInclude Include="..\Framework\Redis\Executor\Executor.h" />
+    <ClInclude Include="..\Framework\Redis\Hashes\Hashes.h" />
+    <ClInclude Include="..\Framework\Redis\Hashes\Hashes.hpp" />
+    <ClInclude Include="..\Framework\Redis\Lists\Lists.hpp" />
+    <ClInclude Include="..\Framework\Redis\Lists\Lists.h" />
+    <ClInclude Include="..\Framework\Redis\Constraint.h" />
+    <ClInclude Include="..\Framework\Redis\PipeLine\PipeLine.h" />
+    <ClInclude Include="..\Framework\Redis\Sentinel\Sentinel.h" />
+    <ClInclude Include="..\Framework\Redis\Sets\Sets.h" />
+    <ClInclude Include="..\Framework\Redis\SortedSets\SortedSets.h" />
+    <ClInclude Include="..\Framework\Redis\Strings\Strings.h" />
+    <ClInclude Include="..\Framework\Redis\Strings\Strings.hpp" />
+    <ClInclude Include="..\Framework\Redis\Session.h" />
+    <ClInclude Include="..\Framework\Task\TaskThread.h" />
+    <ClInclude Include="..\Framework\Thread\Thread.h" />
+    <ClInclude Include="..\Framework\Thread\ThreadManager.h" />
+    <ClInclude Include="..\Framework\Time\DateTime.h" />
+    <ClInclude Include="..\Framework\Time\TickTimer.h" />
+    <ClInclude Include="..\Framework\Time\TimeSpan.h" />
+    <ClInclude Include="Logic\AI\BehaviorTree\BehaviorTree.h" />
+    <ClInclude Include="Logic\AI\BehaviorTree\ControlFlow.h" />
+    <ClInclude Include="Logic\AI\BehaviorTree\Decorator\Decorator.h" />
+    <ClInclude Include="Logic\AI\BehaviorTree\Node.h" />
+    <ClInclude Include="Logic\AI\BehaviorTree\Paralle\Paralle.h" />
+    <ClInclude Include="Logic\AI\BehaviorTree\Selector\Selector.h" />
+    <ClInclude Include="Logic\AI\BehaviorTree\Sequence\Sequence.h" />
+    <ClInclude Include="Logic\AI\BehaviorTree\Service\Service.h" />
+    <ClInclude Include="Logic\AI\BehaviorTree\Task\Task.h" />
+    <ClInclude Include="Logic\AI\HFSM\Machine.h" />
+    <ClInclude Include="Logic\AI\HFSM\Machine.hpp" />
+    <ClInclude Include="Logic\AI\HFSM\State\State.h" />
+    <ClInclude Include="Logic\AI\HFSM\State\State.hpp" />
+    <ClInclude Include="Logic\AI\HFSM\Transition\Transition.h" />
+    <ClInclude Include="Logic\AI\HFSM\Transition\Transition.hpp" />
+    <ClInclude Include="Logic\Attribute\Attribute.h" />
+    <ClInclude Include="Logic\Attribute\Stat\Stat.h" />
+    <ClInclude Include="Logic\Attribute\Stat\StatGroup.h" />
+    <ClInclude Include="..\Network\Asio\Asio.h" />
+    <ClInclude Include="..\Network\Socket.h" />
+    <ClInclude Include="..\Network\Iocp\Iocp.h" />
+    <ClInclude Include="..\Network\Iocp\IocpThread.h" />
+    <ClInclude Include="..\Network\Packet\Packet.h" />
+    <ClInclude Include="..\Network\ListenSocket.h" />
+    <ClInclude Include="..\Network\BSDSocket.h" />
+    <ClInclude Include="..\Network\SocketError.h" />
+    <ClInclude Include="Logic\Collision\Circle.h" />
+    <ClInclude Include="Logic\Collision\Collision.h" />
+    <ClInclude Include="Logic\Collision\Line.h" />
+    <ClInclude Include="Logic\Collision\Point.h" />
+    <ClInclude Include="Logic\Collision\Rectangle.h" />
+    <ClInclude Include="Logic\Entity\CombatObject\CombatObject.h" />
+    <ClInclude Include="Logic\Entity\Entity.h" />
+    <ClInclude Include="Logic\Entity\EntityManager.h" />
+    <ClInclude Include="Logic\Entity\Monster\Monster.h" />
+    <ClInclude Include="Logic\Entity\Monster\MonsterState\MonsterState.h" />
+    <ClInclude Include="Logic\FieldObject\FieldItem.h" />
+    <ClInclude Include="Logic\FieldObject\FieldObjectKeyGenerator.h" />
+    <ClInclude Include="Logic\FieldObject\FieldManager.h" />
+    <ClInclude Include="Logic\FieldObject\FieldObject.h" />
+    <ClInclude Include="Logic\Item\Inventory.h" />
+    <ClInclude Include="Logic\Item\Item.h" />
+    <ClInclude Include="Logic\Item\ItemKeyGenerator.h" />
+    <ClInclude Include="Logic\Item\ItemOption.h" />
+    <ClInclude Include="Logic\Loader\BaseDict.h" />
+    <ClInclude Include="Logic\Loader\BaseElem.h" />
+    <ClInclude Include="Logic\Loader\LoadManager.h" />
+    <ClInclude Include="Logic\Loader\ItemDict.h" />
+    <ClInclude Include="Logic\Loader\ItemElem.h" />
+    <ClInclude Include="Logic\Loader\SkillDict.h" />
+    <ClInclude Include="Logic\Loader\SkillElem.h" />
+    <ClInclude Include="Logic\LogicThread.h" />
+    <ClInclude Include="Logic\Manager\DropManager.h" />
+    <ClInclude Include="Logic\Manager\KeyGenerator.h" />
+    <ClInclude Include="Logic\Player\Player.h" />
+    <ClInclude Include="Logic\Player\Resource\Resource.h" />
+    <ClInclude Include="Logic\Position.h" />
+    <ClInclude Include="Logic\Sector\Cell\Cell.h" />
+    <ClInclude Include="Logic\Sector\Cell\CellManager.h" />
+    <ClInclude Include="Logic\Sector\Grid\Grid.h" />
+    <ClInclude Include="Logic\Sector\Grid\GridManager.h" />
+    <ClInclude Include="Logic\Sector\NavMesh\NavmeshManager.h" />
+    <ClInclude Include="Logic\Sector\Sector.h" />
+    <ClInclude Include="Logic\Sector\SectorManager.h" />
+    <ClInclude Include="Logic\Sector\SectorScript.h" />
+    <ClInclude Include="Logic\Session\ServerSession.h" />
+    <ClInclude Include="Logic\Session\UserSession.h" />
+    <ClInclude Include="Logic\Session\SessionManager.h" />
+    <ClInclude Include="Logic\Skill\EffectLogic\EffectLogic.h" />
+    <ClInclude Include="Logic\Skill\Skill.h" />
+    <ClInclude Include="Logic\Skill\SkillManager.h" />
+    <ClInclude Include="Logic\Skill\SkillState.h" />
+    <ClInclude Include="Pch.h" />
+    <ClInclude Include="Server.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\Lua\Readme.md" />
+    <None Include="..\Framework\Redis\Readme.md" />
+    <None Include="Logic\AI\HFSM\Readme.md" />
+    <None Include="Logic\Sector\ReadMe.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Logic\AI\BehaviorTree\ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

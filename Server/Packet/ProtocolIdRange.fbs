@@ -8,6 +8,7 @@ enum GenerateRange : uint
 	, L2W = 12000
 }
 
+// 수동으로 패킷 인덱스를 발급하는 그룹
 enum Range : uint
 {
 	S2C = 10000

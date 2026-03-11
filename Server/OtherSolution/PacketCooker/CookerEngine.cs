@@ -85,13 +85,12 @@ namespace PacketCooker
 
                 var protocol_names = UpdateBodyAndGetList(path);
 
-                String buffer = 
-$@"namespace Protocol.{folder.Key};
+                String buffer = $@"namespace Protocol.{folder.Key};
                 
 enum eID : uint
 {{
     None = {folder.Value}
-{WriteEnumBody(protocol_names, folder.Value)}
+{WriteProtocolIndex(protocol_names, folder.Value)}
 }}
 ";
                 File.WriteAllText($"{path}\\id.fbs", buffer);
@@ -111,24 +110,24 @@ enum eID : uint
             if (end_index == -1)
                 return protocol_names;
 
+            Int32 id_index = 0;
+            Int32 close_index = 0;
+
+            String temp = String.Empty, name = String.Empty;
             while(end_index > 0)
             {
-                String temp = file_data.Substring(start_index, end_index - start_index);
+                temp = file_data.Substring(start_index, end_index - start_index);
                 var spilts = temp.Split(Token, StringSplitOptions.RemoveEmptyEntries);
 
-                Int32 close_index = file_data.IndexOf("}", start_index);
+                close_index = file_data.IndexOf("}", start_index);
                 if (close_index == -1)
                     break;
 
-                Int32 id_index = file_data.IndexOf(ProtocolName, start_index);
+                id_index = file_data.IndexOf(ProtocolName, start_index);
                 if(id_index != -1 || id_index < close_index)
                 {
-                    String name = spilts[1];
+                    name = spilts[1];
                     protocol_names.Add(name);
-
-                    end_index = file_data.IndexOf(NewLine, id_index);
-                    file_data = file_data.Remove(id_index + ProtocolName.Length, end_index - (id_index + ProtocolName.Length));
-                    file_data = file_data.Insert(id_index + ProtocolName.Length, $" = {name};");
                 }
 
                 start_index = file_data.IndexOf("table", close_index);
@@ -143,7 +142,8 @@ enum eID : uint
             return protocol_names;
         }
 
-        private String WriteEnumBody(List<String> protocol_names, Int32 start_index)
+        // 실제프로
+        private String WriteProtocolIndex(List<String> protocol_names, Int32 start_index)
         {
             if (protocol_names.Count <= 0)
                 return String.Empty;
