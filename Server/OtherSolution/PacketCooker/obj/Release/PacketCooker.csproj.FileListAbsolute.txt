@@ -1,8 +1,0 @@
-C:\Project\MyServer\Server\OtherSolution\PacketCooker\bin\Release\PacketCooker.exe.config
-C:\Project\MyServer\Server\OtherSolution\PacketCooker\bin\Release\PacketCooker.exe
-C:\Project\MyServer\Server\OtherSolution\PacketCooker\bin\Release\PacketCooker.pdb
-C:\Project\MyServer\Server\OtherSolution\PacketCooker\obj\Release\PacketCooker.csproj.AssemblyReference.cache
-C:\Project\MyServer\Server\OtherSolution\PacketCooker\obj\Release\PacketCooker.csproj.SuggestedBindingRedirects.cache
-C:\Project\MyServer\Server\OtherSolution\PacketCooker\obj\Release\PacketCooker.csproj.CoreCompileInputs.cache
-C:\Project\MyServer\Server\OtherSolution\PacketCooker\obj\Release\PacketCooker.exe
-C:\Project\MyServer\Server\OtherSolution\PacketCooker\obj\Release\PacketCooker.pdb
