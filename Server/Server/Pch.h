@@ -313,8 +313,6 @@ extern "C"
 // World
 #include "Logic/Sector/Cell/Cell.h"
 #include "Logic/Sector/Cell/CellManager.h"
-#include "Logic/Sector/Grid/Grid.h"
-#include "Logic/Sector/Grid/GridManager.h"
 #include "Logic/Sector/SectorScript.h"
 #include "Logic/Sector/Sector.h"
 #include "Logic/Sector/SectorManager.h"

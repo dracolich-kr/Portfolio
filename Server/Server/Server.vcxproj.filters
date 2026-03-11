@@ -133,14 +133,8 @@
     <ClCompile Include="Logic\Sector\Cell\Cell.cpp">
       <Filter>Logic\Sector\Cell</Filter>
     </ClCompile>
-    <ClCompile Include="Logic\Sector\Grid\Grid.cpp">
-      <Filter>Logic\Sector\Grid</Filter>
-    </ClCompile>
     <ClCompile Include="Logic\Sector\Cell\CellManager.cpp">
       <Filter>Logic\Sector\Cell</Filter>
-    </ClCompile>
-    <ClCompile Include="Logic\Sector\Grid\GridManager.cpp">
-      <Filter>Logic\Sector\Grid</Filter>
     </ClCompile>
     <ClCompile Include="..\Network\Packet\PacketQueue.cpp">
       <Filter>Network\Packet</Filter>
@@ -318,9 +312,6 @@
     </ClCompile>
     <ClCompile Include="..\Framework\Handler\HandlerManager.cpp">
       <Filter>Logic\Handler</Filter>
-    </ClCompile>
-    <ClCompile Include="Logic\Sector\NavMesh\NavmeshManager.cpp">
-      <Filter>Logic\Sector\NavMesh</Filter>
     </ClCompile>
     <ClCompile Include="Logic\AI\BehaviorTree\BehaviorTree.cpp">
       <Filter>Logic\AI\BehaviorTree</Filter>
@@ -581,9 +572,6 @@
     <ClInclude Include="Logic\Sector\Cell\Cell.h">
       <Filter>Logic\Sector\Cell</Filter>
     </ClInclude>
-    <ClInclude Include="Logic\Sector\Grid\Grid.h">
-      <Filter>Logic\Sector\Grid</Filter>
-    </ClInclude>
     <ClInclude Include="..\Framework\Math\Vector2.h">
       <Filter>Framework\Math</Filter>
     </ClInclude>
@@ -598,9 +586,6 @@
     </ClInclude>
     <ClInclude Include="Logic\Sector\Cell\CellManager.h">
       <Filter>Logic\Sector\Cell</Filter>
-    </ClInclude>
-    <ClInclude Include="Logic\Sector\Grid\GridManager.h">
-      <Filter>Logic\Sector\Grid</Filter>
     </ClInclude>
     <ClInclude Include="..\Framework\Redis\Lists\ListsPush.hpp">
       <Filter>Framework\Redis\Lists</Filter>
@@ -842,9 +827,6 @@
     <ClInclude Include="..\Framework\Handler\HandlerManager.h">
       <Filter>Logic\Handler</Filter>
     </ClInclude>
-    <ClInclude Include="Logic\Sector\NavMesh\NavmeshManager.h">
-      <Filter>Logic\Sector\NavMesh</Filter>
-    </ClInclude>
     <ClInclude Include="Logic\AI\HFSM\Machine.h">
       <Filter>Logic\AI\HFSM</Filter>
     </ClInclude>
@@ -1054,9 +1036,6 @@
     <Filter Include="Logic\FieldObject">
       <UniqueIdentifier>{59eb0d5f-3041-4cea-bcd9-ea1a21fe9263}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Logic\Sector\Grid">
-      <UniqueIdentifier>{26480f22-cb43-42c7-9375-498517d61049}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Logic\Loader">
       <UniqueIdentifier>{9b51288a-940e-4eca-b7c1-efdac37436af}</UniqueIdentifier>
     </Filter>
@@ -1086,9 +1065,6 @@
     </Filter>
     <Filter Include="Logic\Session">
       <UniqueIdentifier>{0361fe69-b76d-478d-85d6-6c0d403103b5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Logic\Sector\NavMesh">
-      <UniqueIdentifier>{5771296e-e0ba-4800-8679-d86c26c4f21d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Logic\AI">
       <UniqueIdentifier>{62d366b7-43aa-43b9-a42e-462ede2ac72b}</UniqueIdentifier>

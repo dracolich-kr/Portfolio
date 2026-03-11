@@ -270,9 +270,6 @@
     <ClCompile Include="Logic\Player\Resource\Resource.cpp" />
     <ClCompile Include="Logic\Sector\Cell\Cell.cpp" />
     <ClCompile Include="Logic\Sector\Cell\CellManager.cpp" />
-    <ClCompile Include="Logic\Sector\Grid\Grid.cpp" />
-    <ClCompile Include="Logic\Sector\Grid\GridManager.cpp" />
-    <ClCompile Include="Logic\Sector\NavMesh\NavmeshManager.cpp" />
     <ClCompile Include="Logic\Sector\Sector.cpp" />
     <ClCompile Include="Logic\Sector\SectorManager.cpp" />
     <ClCompile Include="Logic\Sector\SectorScript.cpp" />
@@ -465,9 +462,6 @@
     <ClInclude Include="Logic\Position.h" />
     <ClInclude Include="Logic\Sector\Cell\Cell.h" />
     <ClInclude Include="Logic\Sector\Cell\CellManager.h" />
-    <ClInclude Include="Logic\Sector\Grid\Grid.h" />
-    <ClInclude Include="Logic\Sector\Grid\GridManager.h" />
-    <ClInclude Include="Logic\Sector\NavMesh\NavmeshManager.h" />
     <ClInclude Include="Logic\Sector\Sector.h" />
     <ClInclude Include="Logic\Sector\SectorManager.h" />
     <ClInclude Include="Logic\Sector\SectorScript.h" />
