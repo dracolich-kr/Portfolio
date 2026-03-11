@@ -55,7 +55,6 @@ docs/webpage_docs-*/
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
