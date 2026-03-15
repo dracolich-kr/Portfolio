@@ -16,7 +16,7 @@ namespace DataBase::ODBC
 
 		void Work() override;
 
-		void Push(Network::SharedPacket packet);
+		void Push(Network::SharedPacket&& packet);
 
 	private:
 		UniquePtr<Network::PacketQueue> mQueue;

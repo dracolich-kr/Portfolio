@@ -7,10 +7,10 @@ namespace Network
 		return mBuffers.size() == 0;
 	}
 
-	void PacketQueue::Push(std::shared_ptr<Packet> packet)
+	void PacketQueue::Push(std::shared_ptr<Packet>&& packet)
 	{
 		std::scoped_lock<std::mutex> lock(mLocker);
-		mBuffers.push_back(packet);
+		mBuffers.push_back(std::move(packet));
 	}
 
 	std::shared_ptr<Packet> PacketQueue::Pop()
@@ -22,7 +22,7 @@ namespace Network
 
 		{
 			std::scoped_lock<std::mutex> lock(mLocker);
-			temp = mBuffers.front();
+			temp = std::move(mBuffers.front());
 			mBuffers.pop_front();
 		}
 

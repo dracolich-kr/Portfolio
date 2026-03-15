@@ -87,7 +87,7 @@ namespace Network
 
 			tempPacket->SetSessionIdx(Socket->GetSessionIndex());
 			//flatbuffers::Verifier verifier(tempPacket->GetBody(), tempPacket->GetSize());
-			Server::GetInstance()->GetLogicThread()->EnqueuePacket(tempPacket);
+			Server::GetInstance()->GetLogicThread()->EnqueuePacket(std::move(tempPacket));
 		}
 
 		this->Socket->RegisterReceived();

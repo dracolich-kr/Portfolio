@@ -10,7 +10,7 @@ namespace Network
 
 		bool IsEmpty();
 
-		void Push(SharedPacket packet);
+		void Push(SharedPacket&& packet);
 		SharedPacket Pop();
 
 	private:
@@ -21,7 +21,7 @@ namespace Network
 	__interface PacketProcessor
 	{
 	public:
-		virtual void EnqueuePacket(SharedPacket packet) PURE;
+		virtual void EnqueuePacket(SharedPacket&& packet) PURE;
 
 	};
 

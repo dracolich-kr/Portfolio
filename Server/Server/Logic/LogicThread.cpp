@@ -63,8 +63,8 @@ void LogicThread::Work()
 	}
 }
 
-void LogicThread::EnqueuePacket(Network::SharedPacket packet)
+void LogicThread::EnqueuePacket(Network::SharedPacket&& packet)
 {
 	LOG_DEBUG_FMT(LogManager::GetInstance()->GetLogger(L"logicThread"), L"PushPacket:%d \n", packet->GetHeader()->GetProtocolId());
-	mQueue->Push(packet);
+	mQueue->Push(std::move(packet));
 }

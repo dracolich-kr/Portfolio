@@ -18,7 +18,7 @@ public:
 
 	virtual ErrorResult Work() override;
 
-	void EnqueuePacket(SharedPacket packet) override { mQueue->Push(packet); }
+	void EnqueuePacket(SharedPacket&& packet) override { mQueue->Push(std::move(packet)); }
 
 private:
 	void UpdatePacket();

@@ -116,6 +116,12 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+	  <PostBuildEvent>
+		  <Command>
+			  xcopy /y /d "$(SolutionDir)..\ThirdParty\log4cplus\log4cplus-2.0.8\bin\log4cplusUD.dll" "$(OutDir)"
+		  </Command>
+		  <Message>Copying DLLs to output directory...</Message>
+	  </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -133,6 +139,12 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+	  <PostBuildEvent>
+		  <Command>
+			  xcopy /y /d "$(SolutionDir)..\ThirdParty\log4cplus\log4cplus-2.0.8\bin\log4cplusUD.dll" "$(OutDir)"
+		  </Command>
+		  <Message>Copying DLLs to output directory...</Message>
+	  </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\CommonHeader.h" />

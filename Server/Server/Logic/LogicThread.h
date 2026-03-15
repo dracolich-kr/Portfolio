@@ -18,7 +18,7 @@ public:
 
 	void Work() override;
 
-	void EnqueuePacket(Network::SharedPacket packet);
+	void EnqueuePacket(Network::SharedPacket&& packet);
 
 private:
 	ErrorResult updatePacket(DeltaTime delta_time);

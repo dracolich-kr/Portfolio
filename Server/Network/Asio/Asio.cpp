@@ -98,9 +98,9 @@ namespace Network
 			IF_RETURN(tempPacket->GetTotalSize() > mBuffer->GetUseSize(), );
 			mBuffer->Pop((UInt8*)tempPacket->GetBuffer(), tempPacket->GetTotalSize());
 
-			if (mPacketProcessor != nullptr)
+			if (mPacketProcessor)
 			{
-				mPacketProcessor->EnqueuePacket(tempPacket);
+				mPacketProcessor->EnqueuePacket(std::move(tempPacket));
 			}
 		}
 		Read(mBuffer->GetBufferSize() - mBuffer->GetTailPos());
